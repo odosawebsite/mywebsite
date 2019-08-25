@@ -1,0 +1,472 @@
+<html>
+    
+    <title>Odosa Obasuyi</title>
+    
+    <head>
+        <!-- Random Stuff -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Icon -->
+        <link rel="icon" href = "Images/icon.ico">
+        
+        <!-- Google font: IBM Plex Sans -->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">
+            
+        <!-- Stylesheet -->
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
+        
+        <!-- Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    
+    <body id="body" class="light-mode" onload="loadingScreen()">
+        
+        <!-- Loader -->
+        <div class="gooey">
+            <!-- Dot 1 -->
+            <span class="dot"></span>
+            
+            <!-- Dots 2-4 -->
+            <div class="dots"><span></span><span></span><span></span></div>
+        </div>
+        
+        <!-- Loader vs Div -->
+        <div id="myDiv" class="animate-bottom">
+            
+            <!-- Topnav bar -->
+            <div class="topnav">
+                <!-- Logo -->
+                <a href=#home style="width: 15%;"><img id="logoimg" src="Images/logo.png"></a>
+
+                <!--Dropdown menu -->
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img id="dropimg" src="Images/drop2.png"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href=#home class="dropbtn">HOME</a>
+                            <a href=#about class="dropbtn">ABOUT</a>
+                            <a href=#projects class="dropbtn">CURRENT PROJECTS</a>
+                            <a href=#experience class="dropbtn">EXPERIENCE</a>
+                            <a href=#portfolio class="dropbtn">PORTFOLIO</a>
+                            <!-- <a href=#accomplishments class="dropbtn">ACCOMPLISHMENTS</a -->
+                            <a href=#interests class="dropbtn">INTERESTS</a>
+                            <a href=#blog class="dropbtn">BLOG</a>
+                            <a href=#contact class="dropbtn">CONTACT</a>           
+                        </div>
+                </div>
+
+                <!-- Dark/Light Toggle Button -->
+                <a id="dltoggle" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><img name="sun" src="Images/sun2.png" width="45" height="45" style="margin-top: 10;"></a>
+            </div>
+
+            <!-- Scroll to top button -->
+            <button onclick="topFunction()" id="topbtn"><img src="Images/up.png" class="topimg"></button>
+
+            <!-- Home section -->
+            <section id="home">
+                <div class="graydiv" style="background-image: url(Images/home1.jpg);"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <!-- Title -->
+                    <p class="hometitle">HI! I'M ODOSA.</p>
+
+                    <!-- Typewriter (Also 696969 :) -->
+                    <p id="text"></p> 
+
+                    <!-- Down Button -->
+                    <center><a href="#about"><img src="Images/down.png" class="downbtn"></a></center>
+                </div>
+            </section>
+
+            <!-- About section -->
+            <section id="about">
+                <div><br><br><br><br>
+                    <!-- Title -->
+                    <h2>A LITTLE BIT ...</h2>
+                    <h1>ABOUT ME</h1>
+
+                    <!-- Me :) -->
+                    <img src="Images/odosa.png" class="aboutimg">
+
+                    <!-- Stuff about me -->
+                    <p class="aboutpar">Hi! <span style="font-weight: 300;"> I'm <span style="font-weight: 700;">Odosa Obasuyi.</span> I have a passion for computer science and am interested in virtual and augmented reality, IoT (Internet of things), entrepreneurship, and making games. I've created and been part of many projects focused on solving real-world problems at hackathons, elite programs, and as personal side projects.</span></p>
+
+                    <p class="aboutpar2">My goal is to create a company that impacts billions of lives around the world for the better, and to make a permanent impact on our future.</p>
+                </div>
+            </section>
+
+            <!-- Projects section -->
+            <section id="projects">
+                <div class="graydiv"><br><br><br><br>
+                    <!-- Title -->
+                    <h2>EXACTLY WHAT AM I ...</h2>
+                    <h1>WORKING ON</h1> 
+
+                    <!-- My projects -->
+                    <center>
+                        <div class="container">
+                            <!-- Box 1 -->
+                            <div id="leftbox"> 
+                                <img src="Images/memofood.png" class="boximg">
+                                    <p class="boxtitle">MEMOFOOD</p>
+                                    <p class="boxpar"> 
+                                        I am currently the co-founder of a company started in <span style="font-weight: 600;">SHAD</span> called Memofood. We are working on what we believe is a solution to food waste in Canada.
+                                    </p>
+                                    <p class="boxpar"> 
+                                        If you'd like to learn more about what we're about, you can visit our website at <a href="https://www.memofood.ca/" style="color: #4d4d4d; font-weight: 600; text-decoration: none;">memofood.ca</a> for more info.
+                                    </p>
+                            </div>
+
+                            <!-- Box 2 -->
+                            <div id="centerbox">
+                                <img src="Images/countmein.png" class="boximg">
+                                    <p class="boxtitle">COUNTMEIN</p>
+                                    <p class="boxpar"> 
+                                        I personally believe that in a world that is changing so fast with the exponential rise of technology, education is the one thing that hasn't changed. That's why I started <span style="font-weight: 600;">CountMeIn</span>, a passion project of mine that I started to help kids learn math in a more fun way. 
+                                    </p>
+                                    <p class="boxpar"> 
+                                        If you'd to chat more with me about CountMeIn, send me an email at <span style="font-weight: 600;">odosaobasuyi@gmail.com</span>.
+                                    </p> 
+                            </div>
+
+                            <!-- Box 3 -->
+                            <div id="rightbox">
+                                <img src="Images/learning.png" class="boximg">
+                                    <p class="boxtitle">CONTINUING TO LEARN</p>
+                                    <p class="boxpar"> 
+                                        I believe that making an effort to learn everyday is essential to grow as a person.  
+                                    </p>
+                                    <p class="boxpar"> 
+                                        In general, I love to learn about how stuff works and get fascinated by almost anything. Right now, I'm learning about VR/AR, but I'm working on expanding my scope to other incredible areas of technology.  
+                                    </p>
+                            </div> 
+                        </div><br><br><br><br>
+                    </center>
+
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section id="experience">
+                <div><br><br><br><br>
+                    <!-- Title -->
+                    <h2>WHAT HAVE I ...</h2>
+                    <h1>BEEN UP TO</h1>
+
+                    <center>
+                        <!-- Memofood -->
+                        <div class="container2">
+                            <img src="Images/memofood.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text2">MEMOFOOD</div>
+                                <div class="text3">Memofood is a company whose goal is to reduce food waste by reminding users of their food's expiry dates, decreasing one of the leading causes of food waste in North America.</div>
+                                <a class="text4" href="https://www.memofood.ca/" target="_blank">memofood.ca</a>
+                            </div>
+                        </div><br>
+
+                        <!-- SHAD -->
+                        <div class="container2">
+                            <img src="Images/shad.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text2">SHAD</div>
+                                <div class="text3">SHAD is a STEAM program for students in Grade 10 and 11. It is a month-long program that prepares students to take on social and economic challenges.</div>
+                                <a class="text4" href="https://www.shad.ca/" target="_blank">shad.ca</a>
+                            </div>
+                        </div><br>
+
+                        <!-- TKS -->
+                        <div class="container2">
+                            <img src="Images/tks.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text2">TKS</div>
+                                <div class="text3">TKS is Canada's leading innovation incubator for young leaders age 13-17. TKS develops ambitious young people to impact billions using emerging technologies.</div>
+                                <a class="text4" href="https://theksociety.com/" target="_blank">tks.com</a>
+                            </div>
+                        </div><br>
+
+                        <!-- UCC -->
+                        <div class="container2">
+                            <img src="Images/ucc.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text2">UCC</div>
+                                <div class="text3">Upper Canada College (UCC) is an IB World School that enrolls 1,160 boys in Senior Kindergarten through Year 12, and has 10,000 alumni in more than 75 countries.</div>
+                                <a class="text4" href="http://ucc.on.ca/" target="_blank">ucc.on.ca</a>
+                            </div>
+                        </div><br>
+                    </center><br><br><br><br><br>
+
+                </div>
+            </section>
+
+            <!-- Portfolio section -->
+            <section id="portfolio">
+                <div class="graydiv"><br><br><br><br>
+                    <!-- Title -->
+                    <h2>WHERE CAN YOU ...</h2>
+                    <h1>GET MY PORTFOLIO</h1>
+
+                    <!-- Resume Button -->        
+                    <button href="doc/Odosa_Obasuyi.pdf" class="downloadbtn"><i class="fa fa-download"></i> &nbsp DOWNLOAD MY RESUME</button><br><br><br><br><br>
+                </div>
+            </section>
+
+            <!-- Interests section -->
+            <section id="interests">
+                <div><br><br><br><br>
+                    <!-- Title -->
+                    <h2>WHAT AM I ...</h2>
+                    <h1>INTERESTED IN</h1>
+
+                    <center>
+                    <!-- Container 1 -->
+                    <div class="container3">
+                        <!-- Box 1 -->
+                        <div id="leftbox2"> 
+                            <img src="Images/lightbulb.png" class="boximg">
+                            <p class="boxtitle">ENTREPRENEURSHIP</p>
+                            <p class="boxpar"> 
+                                I have been part of a number of entrepreneurship programs including Future Design School (FDS), The Knowledge Society (TKS), and SHAD and am the Co-Founder of Memofood.
+                            </p> 
+                        </div>
+
+                        <!-- Box 2 -->
+                        <div id="centerbox2">
+                            <img src="Images/vr.png" class="boximg">
+                            <p class="boxtitle">VR/AR</p>
+                            <p class="boxpar"> 
+                                Virtual and Augmented Reality is a revolutionary technology that excites me, and I have written a few articles on Linkedin on it, as well as talking about it on my YouTube channel. 
+                            </p> 
+                        </div>
+
+                        <!-- Box 3 -->
+                        <div id="rightbox2">
+                            <img src="Images/hardware.png" class="boximg">
+                            <p class="boxtitle">ROBOTICS & HARDWARE</p>
+                            <p class="boxpar"> 
+                                I have developed a number of robotics and hardware projects in hackathons and as general side projects.  
+                            </p> 
+                        </div> 
+                    </div>
+
+                    <!-- Container 2 -->
+                    <div class="container3">
+                        <!-- Box 4 -->
+                        <div id="leftbox2">
+                            <img src="Images/software.png" class="boximg">
+                            <p class="boxtitle">SOFTWARE</p>
+                            <p class="boxpar"> 
+                                I have also developed numerous software projects-, mostly in the form of websites and games. I always love creating something and getting it to do something cool! 
+                            </p> 
+                        </div> 
+
+                        <!-- Box 5 -->
+                        <div id="centerbox2"> 
+                            <img src="Images/learning2.png" class="boximg">
+                            <p class="boxtitle">LEARNING</p>
+                            <p class="boxpar"> 
+                                Learning has been a passion of mine from an extremely young age. I love to learn more about how things work, read books and attend conferences regularly.
+                            </p> 
+                        </div>
+
+                        <!-- Box 6 -->
+                        <div id="rightbox2">
+                            <img src="Images/other.png" class="boximg">
+                            <p class="boxtitle">OTHER INTERESTS</p>
+                            <p class="boxpar"> 
+                                Some of my other interests include soccer, taekwondo, playing the alto saxophone, drawing, reading, debating, coding, and just chilling with friends. 
+                            </p> 
+                        </div> 
+                    </div>
+                    </center><br><br><br><br>
+
+                </div>
+            </section>
+
+            <!-- Accomplishments section (Update after next year) -->
+            <!-- <section id="accomplishments">
+                <div style="background-color: white;"><br>
+                    <!-- Title -->
+                    <!-- <p style="font-size: 55; text-align: center; margin-top: 60px; margin-bottom: 45px;">Accomplishments</p> -->
+
+                    <!-- Line -->
+                    <!--<svg height="50" width="1300">
+                      <line x1="635" x2="790" style="stroke:rgb(0,0,64); stroke-width:5"/>
+                    </svg> 
+                </div>
+            </section> -->
+
+            <!-- Blog section -->
+            <section id="blog">
+                <div class="graydiv"><br><br><br><br>
+                    <!-- Title -->
+                    <h2>WHERE DO I ...</h2>
+                    <h1>BLOG</h1>
+
+                    <!-- Buttons -->
+                    <a href="https://www.linkedin.com/in/odosa-obasuyi-a2b62b150/detail/recent-activity/posts/" target="_blank"><img src="Images/linkedin.png" class="blogimg"></a>
+                    <a href="https://www.youtube.com/channel/UCqpq4BIysSdo2eV1c7mTazw" target="_blank"><img src="Images/youtube.png" class="blogimg2"></a>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section id="contact">
+                <div><br><br><br><br>
+                    <!-- Title -->
+                    <h2>HOW CAN YOU ...</h2>
+                    <h1>GET IN TOUCH</h1>
+
+                    <!-- Contact form -->
+                    <div class="contact">
+                        <form action="mailto:odosaobasuyi@gmail.com" method="post" enctype="text/plain">
+                            <input type="text" id="name" name="name" placeholder="Your name...">
+                            <input type="text" id="email" name="email" placeholder="Your email...">
+                            <input type="text" id="email" name="email" placeholder="Your subject...">
+                            <textarea id="message" name="mesage" placeholder="Your Message..." style="height:200px;"></textarea>
+                            <center><input type="submit" value="Send Message"></center>
+                        </form>
+                    </div>
+                    <br><br><br><br><br> 
+                </div>
+            </section>
+
+            <!-- Copyright -->
+            <div class="copydiv"><br><br>
+                <!-- Contact Buttons -->
+                <a class="tooltip" href="https://www.linkedin.com/in/odosa-obasuyi-a2b62b150/" target="_blank"><img src="Images/linkedin2.png" class="copybtn" hspace="5;"><span class="tooltiptext">Odosa Obasuyi</span></a>
+                <a class="tooltip" href="https://github.com/od-obas1187" target="_blank"><img src="Images/github.png" class="copybtn" hspace="5;"><span class="tooltiptext">od-obas1187</span></a>
+                <a class="tooltip"><img src="Images/email.jpg" class="copybtn" hspace="5;"><span class="tooltiptext">odosaobasuyi @gmail.com</span></a>
+                <a class="tooltip"><img src="Images/phone.png" class="copybtn" hspace="5;"><span class="tooltiptext">Available upon request</span></a>
+
+                <!-- Copyright Statement -->
+                <br><p class="copytext">&copy; 2019 <span style="font-weight: 700; font-family: IBM Plex Sans;">ODOSA OBASUYI</span>. All Rights Reserved. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Made by Odosa Obasuyi on <i class="fa fa-github"></i> using &nbsp;<img src="Images/brackets.png" width="22;"></p>
+
+            </div>
+            
+        </div>
+        
+
+        
+        <!-- Javascript -->
+        <script type="text/javascript">
+
+        /***** LOADING SCREEN *****/
+        var myVar;
+            
+        function stuff() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function loadingScreen() {
+            stuff();
+        }
+
+        function showPage() {
+          document.getElementsByClassName("gooey")[0].style.display = "none";
+          document.getElementsByClassName("dot")[0].style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+            
+        /***** TYPEWRITER *****/
+        //Variables
+        var content = [ "CO-FOUNDER OF MEMOFOOD", "STUDENT PROGRAMMER", "VR/AR ENTHUSIAST", "LIFELONG LEARNER" ]; // List of sentences
+        var sentence = 0; // Current sentence being processed
+        var charnumber = 0; // Character number of the current sentence being processed 
+        var intervalnum; // Holds the handle returned from setInterval
+        var textelement = document.querySelector("#text"); // Element that holds the text
+
+        // Implements typing effect
+        function Type() { 
+            var text =  content[sentence].substring(0, charnumber + 1);
+            textelement.innerHTML = text;
+            charnumber++;
+
+            // If full sentence has been displayed then start to delete the sentence after some time
+            if(text === content[sentence]) {
+                clearInterval(intervalnum);
+                setTimeout(function() {intervalnum = setInterval(Delete, 40);}, 1000);
+            }
+        }
+
+        // Implements deleting effect
+        function Delete() {
+            var text =  content[sentence].substring(0, charnumber - 1);
+            textelement.innerHTML = text;
+            charnumber--;
+
+            // If sentence has been deleted then start to display the next sentence
+            if(text === '') {
+                clearInterval(intervalnum);
+
+                // If last sentence then display the first one, else move to the next
+                if(sentence == (content.length - 1))
+                    sentence = 0;
+                else
+                    sentence++;
+                charnumber = 0;
+
+                // Start to display the next sentence after some time
+                setTimeout(function() {intervalnum = setInterval(Type, 80);}, 200);
+            }
+        }
+
+        // Start the typing effect on load
+        intervalnum = setInterval(Type, 60);
+            
+            
+            
+        /***** DARK/LIGHT TOGGLE *****/
+        function toggleDarkLight() {
+          var body = document.getElementById("body");
+          var currentClass = body.className;
+          body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+        }
+            
+        /***** TRANSITIONING TOPNAV COLOR *****/
+        window.onscroll = function() {scrollFunction()};  
+            
+        /***** SCROLL-TO-TOP BUTTON *****/
+        function scrollFunction() {
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            document.getElementById("topbtn").style.display = "block";
+            document.getElementsByClassName('topnav')[0].style.backgroundColor = "white";
+            document.getElementsByClassName('topnav')[0].style.boxShadow = "0px 8px 16px 0px rgba(0,0,0,0.2)";
+            document.getElementsByClassName('dropdown-content')[0].style.backgroundColor = "white";
+            document.getElementById('logoimg').src = "Images/logo2.png";
+            document.getElementById('dropimg').src = "Images/drop.png";
+            document.getElementsByName('sun')[0].src = "Images/sun.png";
+              
+            var i = 0;
+            for (int i = o; i < 8; i++) {
+               document.getElementsByClassName('dropbtn')[i].style.color = "black";
+            }
+              
+          } else {
+            document.getElementById("topbtn").style.display = "none";
+            document.getElementsByClassName('topnav')[0].style.backgroundColor = "transparent";
+            document.getElementsByClassName('topnav')[0].style.boxShadow = "none";
+            document.getElementsByClassName('dropdown-content')[0].style.backgroundColor = "transparent";
+            document.getElementsByClassName('dropdown-content')[0].style.color = "white";
+            document.getElementById('logoimg').src = "Images/logo.png";
+            document.getElementById('dropimg').src = "Images/drop2.png";
+            document.getElementsByName('sun')[0].src = "Images/sun2.png";
+              
+            var i = 0;
+            for (int i = o; i < 8; i++) {
+               document.getElementsByClassName('dropbtn')[i].style.color = "white";
+            }
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+        </script>
+        
+        
+        
+    </body>
+    
+</html>
