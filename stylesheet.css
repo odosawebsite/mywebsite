@@ -483,7 +483,7 @@
             /* Container 2 - Overlay Container */
             .container2 {
                 position: relative;
-                width: 80%;
+                width: 85%;
             }
 
             .image {
@@ -507,7 +507,7 @@
             }
 
             .container2:hover .overlay {
-                opacity: 0.8;
+                opacity: 0.9;
              }
             /* Container 1 - Overlay Container End */
             
