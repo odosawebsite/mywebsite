@@ -531,10 +531,10 @@
                 line-height: 1.7;
                 position: absolute;
                 top: 50%;
-                left: 30%;
+                left: 20%;
                 -webkit-transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
-                transform: translate(-20%, -50%);
+                transform: translate(-10%, -50%);
                 text-align: center;
             }
             
