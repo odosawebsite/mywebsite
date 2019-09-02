@@ -44,6 +44,8 @@
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn"><img id="dropimg" src="Images/drop2.png"></button>
                         <div id="myDropdown" class="dropdown-content">
+                            <!-- Dark/Light Toggle Button -->
+                            <a id="dltoggle" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><img name="sun" src="Images/sun2.png" width="45" height="45"></a>
                             <a href=#home class="dropbtn">HOME</a>
                             <a href=#about class="dropbtn">ABOUT</a>
                             <a href=#projects class="dropbtn">CURRENT PROJECTS</a>
@@ -55,9 +57,6 @@
                             <a href=#contact class="dropbtn">CONTACT</a>           
                         </div>
                 </div>
-
-                <!-- Dark/Light Toggle Button -->
-                <a id="dltoggle" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><img name="sun" src="Images/sun2.png" width="45" height="45" style="margin-top: 10;"></a>
             </div>
 
             <!-- Scroll to top button -->
@@ -65,7 +64,7 @@
 
             <!-- Home section -->
             <section id="home">
-                <div class="graydiv" style="background-image: url(Images/home1.jpg);"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="graydiv" style="background-image: url(Images/home.png);"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <!-- Title -->
                     <p class="hometitle">HI! I'M ODOSA.</p>
 
@@ -85,12 +84,12 @@
                     <h1>ABOUT ME</h1>
 
                     <!-- Me :) -->
-                    <img src="Images/odosa.png" class="aboutimg">
+                    <img src="Images/odosa.jpg" class="aboutimg">
 
                     <!-- Stuff about me -->
-                    <p class="aboutpar">Hi! <span style="font-weight: 300;"> I'm <span style="font-weight: 700;">Odosa Obasuyi.</span> I have a passion for computer science and am interested in virtual and augmented reality, IoT (Internet of things), entrepreneurship, and making games. I've created and been part of many projects focused on solving real-world problems at hackathons, elite programs, and as personal side projects.</span></p>
+                    <p class="aboutpar">Hi! <span style="font-weight: 300;"> I'm <span style="font-weight: 700;">Odosa Obasuyi.</span> I have a passion for computer science and am interested in virtual and augmented reality, IoT (Internet of things), entrepreneurship, and programming. I've created and been part of many projects focused on solving real-world problems at hackathons, elite programs, and as personal side projects.</span></p>
 
-                    <p class="aboutpar2">My goal is to create a company that impacts billions of lives around the world for the better, and to make a permanent impact on our future.</p>
+                    <p class="aboutpar2">My goal is to create a company that impacts billions of lives around the world for the better, and to make a permanent impact on our future.</p><br><br><br><br><br><br>
                 </div>
             </section>
 
@@ -103,33 +102,32 @@
 
                     <!-- My projects -->
                     <center>
-                        <div class="container">
                             <!-- Box 1 -->
-                            <div id="leftbox"> 
+                            <div class="box"> 
                                 <img src="Images/memofood.png" class="boximg">
                                     <p class="boxtitle">MEMOFOOD</p>
                                     <p class="boxpar"> 
                                         I am currently the co-founder of a company started in <span style="font-weight: 600;">SHAD</span> called Memofood. We are working on what we believe is a solution to food waste in Canada.
                                     </p>
                                     <p class="boxpar"> 
-                                        If you'd like to learn more about what we're about, you can visit our website at <a href="https://www.memofood.ca/" style="color: #4d4d4d; font-weight: 600; text-decoration: none;">memofood.ca</a> for more info.
-                                    </p>
+                                        If you'd like to learn more about what we're about, you can visit our website at <a href="http://www.memofood.ca/" style="color: #4d4d4d; font-weight: 600; text-decoration: underline;">www.memofood.ca</a> for more info.
+                                    </p><br>
                             </div>
 
                             <!-- Box 2 -->
-                            <div id="centerbox">
+                            <div class="box">
                                 <img src="Images/countmein.png" class="boximg">
                                     <p class="boxtitle">COUNTMEIN</p>
                                     <p class="boxpar"> 
-                                        I personally believe that in a world that is changing so fast with the exponential rise of technology, education is the one thing that hasn't changed. That's why I started <span style="font-weight: 600;">CountMeIn</span>, a passion project of mine that I started to help kids learn math in a more fun way. 
+                                        I personally believe that in a world that is changing so fast with the exponential rise of technology, education is the one thing that hasn't changed. That's why I started <span style="font-weight: 600;">CountMeIn</span>, a passion project of mine that I started to help kids learn math in a more fun, effective way. 
                                     </p>
                                     <p class="boxpar"> 
                                         If you'd to chat more with me about CountMeIn, send me an email at <span style="font-weight: 600;">odosaobasuyi@gmail.com</span>.
-                                    </p> 
+                                    </p><br> 
                             </div>
 
                             <!-- Box 3 -->
-                            <div id="rightbox">
+                            <div class="box">
                                 <img src="Images/learning.png" class="boximg">
                                     <p class="boxtitle">CONTINUING TO LEARN</p>
                                     <p class="boxpar"> 
@@ -137,9 +135,9 @@
                                     </p>
                                     <p class="boxpar"> 
                                         In general, I love to learn about how stuff works and get fascinated by almost anything. Right now, I'm learning about VR/AR, but I'm working on expanding my scope to other incredible areas of technology.  
-                                    </p>
+                                    </p><br>
                             </div> 
-                        </div><br><br><br><br>
+                        <br><br><br><br>
                     </center>
 
                 </div>
@@ -159,7 +157,7 @@
                             <div class="overlay">
                                 <div class="text2">MEMOFOOD</div>
                                 <div class="text3">Memofood is a company whose goal is to reduce food waste by reminding users of their food's expiry dates, decreasing one of the leading causes of food waste in North America.</div>
-                                <a class="text4" href="https://www.memofood.ca/" target="_blank">memofood.ca</a>
+                                <a class="text4" href="http://www.memofood.ca/" target="_blank">www.memofood.ca</a>
                             </div>
                         </div><br>
 
@@ -169,7 +167,7 @@
                             <div class="overlay">
                                 <div class="text2">SHAD</div>
                                 <div class="text3">SHAD is a STEAM program for students in Grade 10 and 11. It is a month-long program that prepares students to take on social and economic challenges.</div>
-                                <a class="text4" href="https://www.shad.ca/" target="_blank">shad.ca</a>
+                                <a class="text4" href="https://www.shad.ca/" target="_blank">www.shad.ca</a>
                             </div>
                         </div><br>
 
@@ -178,8 +176,18 @@
                             <img src="Images/tks.jpg" class="image">
                             <div class="overlay">
                                 <div class="text2">TKS</div>
-                                <div class="text3">TKS is Canada's leading innovation incubator for young leaders age 13-17. TKS develops ambitious young people to impact billions using emerging technologies.</div>
-                                <a class="text4" href="https://theksociety.com/" target="_blank">tks.com</a>
+                                <div class="text3">The Knowledge Society (TKS) is Canada's leading innovation incubator for young leaders age 13-17. TKS develops ambitious young people to impact billions using emerging technologies.</div>
+                                <a class="text4" href="https://theksociety.com/" target="_blank">www.tks.com</a>
+                            </div>
+                        </div><br>
+                        
+                        <!-- FDS -->
+                        <div class="container2">
+                            <img src="Images/fds.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text2">FDS</div>
+                                <div class="text3">Future Design School (FDS) empowers students with the skills they need to be ready for the future, while helping hundreds of students in dozens of cities to learn skills in app design.</div>
+                                <a class="text4" href="https://futuredesignschool.com/" target="_blank">www.fds.com</a>
                             </div>
                         </div><br>
 
@@ -189,7 +197,7 @@
                             <div class="overlay">
                                 <div class="text2">UCC</div>
                                 <div class="text3">Upper Canada College (UCC) is an IB World School that enrolls 1,160 boys in Senior Kindergarten through Year 12, and has 10,000 alumni in more than 75 countries.</div>
-                                <a class="text4" href="http://ucc.on.ca/" target="_blank">ucc.on.ca</a>
+                                <a class="text4" href="http://ucc.on.ca/" target="_blank">www.ucc.on.ca</a>
                             </div>
                         </div><br>
                     </center><br><br><br><br><br>
@@ -205,7 +213,7 @@
                     <h1>GET MY PORTFOLIO</h1>
 
                     <!-- Resume Button -->        
-                    <button href="doc/Odosa_Obasuyi.pdf" class="downloadbtn"><i class="fa fa-download"></i> &nbsp DOWNLOAD MY RESUME</button><br><br><br><br><br>
+                    <button onclick=" window.open('Images/Odosa_Obasuyi.pdf','_blank')" class="downloadbtn"><i class="fa fa-download"></i> &nbsp DOWNLOAD MY RESUME</button><br><br><br><br><br>
                 </div>
             </section>
 
@@ -218,64 +226,60 @@
 
                     <center>
                     <!-- Container 1 -->
-                    <div class="container3">
                         <!-- Box 1 -->
-                        <div id="leftbox2"> 
+                        <div class="box"> 
                             <img src="Images/lightbulb.png" class="boximg">
                             <p class="boxtitle">ENTREPRENEURSHIP</p>
                             <p class="boxpar"> 
                                 I have been part of a number of entrepreneurship programs including Future Design School (FDS), The Knowledge Society (TKS), and SHAD and am the Co-Founder of Memofood.
-                            </p> 
+                            </p><br> 
                         </div>
 
                         <!-- Box 2 -->
-                        <div id="centerbox2">
+                        <div class="box">
                             <img src="Images/vr.png" class="boximg">
                             <p class="boxtitle">VR/AR</p>
                             <p class="boxpar"> 
                                 Virtual and Augmented Reality is a revolutionary technology that excites me, and I have written a few articles on Linkedin on it, as well as talking about it on my YouTube channel. 
-                            </p> 
+                            </p><br> 
                         </div>
 
                         <!-- Box 3 -->
-                        <div id="rightbox2">
+                        <div class="box">
                             <img src="Images/hardware.png" class="boximg">
                             <p class="boxtitle">ROBOTICS & HARDWARE</p>
                             <p class="boxpar"> 
                                 I have developed a number of robotics and hardware projects in hackathons and as general side projects.  
-                            </p> 
+                            </p><br> 
                         </div> 
-                    </div>
 
                     <!-- Container 2 -->
-                    <div class="container3">
                         <!-- Box 4 -->
-                        <div id="leftbox2">
+                        <div class="box">
                             <img src="Images/software.png" class="boximg">
                             <p class="boxtitle">SOFTWARE</p>
                             <p class="boxpar"> 
-                                I have also developed numerous software projects-, mostly in the form of websites and games. I always love creating something and getting it to do something cool! 
-                            </p> 
+                                I have also developed numerous software projects, mostly in the form of websites and games. I always love creating something and getting it to do something cool! 
+                            </p><br> 
                         </div> 
 
                         <!-- Box 5 -->
-                        <div id="centerbox2"> 
+                        <div class="box"> 
                             <img src="Images/learning2.png" class="boximg">
                             <p class="boxtitle">LEARNING</p>
                             <p class="boxpar"> 
                                 Learning has been a passion of mine from an extremely young age. I love to learn more about how things work, read books and attend conferences regularly.
-                            </p> 
+                            </p><br> 
                         </div>
 
                         <!-- Box 6 -->
-                        <div id="rightbox2">
+                        <div class="box">
                             <img src="Images/other.png" class="boximg">
                             <p class="boxtitle">OTHER INTERESTS</p>
                             <p class="boxpar"> 
                                 Some of my other interests include soccer, taekwondo, playing the alto saxophone, drawing, reading, debating, coding, and just chilling with friends. 
-                            </p> 
+                            </p><br> 
                         </div> 
-                    </div>
                     </center><br><br><br><br>
 
                 </div>
@@ -307,7 +311,7 @@
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
             </section>
-
+        
             <!-- Contact section -->
             <section id="contact">
                 <div><br><br><br><br>
@@ -320,7 +324,7 @@
                         <form action="mailto:odosaobasuyi@gmail.com" method="post" enctype="text/plain">
                             <input type="text" id="name" name="name" placeholder="Your name...">
                             <input type="text" id="email" name="email" placeholder="Your email...">
-                            <input type="text" id="subject" name="subject" placeholder="Your subject...">
+                            <input type="text" id="subject" name="email" placeholder="Your subject...">
                             <textarea id="message" name="message" placeholder="Your Message..." style="height:200px;"></textarea>
                             <center><input type="submit" value="Send Message"></center>
                         </form>
@@ -328,7 +332,7 @@
                     <br><br><br><br><br> 
                 </div>
             </section>
-
+            
             <!-- Copyright -->
             <div class="copydiv"><br><br>
                 <!-- Contact Buttons -->
@@ -338,7 +342,10 @@
                 <a class="tooltip"><img src="Images/phone.png" class="copybtn" hspace="5;"><span class="tooltiptext">Available upon request</span></a>
 
                 <!-- Copyright Statement -->
-                <br><p class="copytext">&copy; 2019 <span style="font-weight: 700; font-family: IBM Plex Sans;">ODOSA OBASUYI</span>. All Rights Reserved. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Made by Odosa Obasuyi on <i class="fa fa-github"></i> using &nbsp;<img src="Images/brackets.png" width="22;"></p>
+                <center>
+                <br><p class="copytext">&copy; 2019 <span style="font-weight: 700; font-family: IBM Plex Sans;">ODOSA OBASUYI</span>. All Rights Reserved. </p> <p>Made by Odosa Obasuyi on <i class="fa fa-github"></i> using &nbsp;<img src="Images/brackets.png" width="22;"></p><br>
+                    
+                </center>
 
             </div>
             
@@ -349,6 +356,8 @@
         <!-- Javascript -->
         <script type="text/javascript">
 
+            
+            
         /***** LOADING SCREEN *****/
         var myVar;
             
@@ -366,9 +375,11 @@
           document.getElementById("myDiv").style.display = "block";
         }
             
+            
+            
         /***** TYPEWRITER *****/
         //Variables
-        var content = [ "CO-FOUNDER OF MEMOFOOD", "STUDENT PROGRAMMER", "VR/AR ENTHUSIAST", "LIFELONG LEARNER" ]; // List of sentences
+        var content = [ "CO-FOUNDER OF MEMOFOOD", "ENTREPRENEUR", "STUDENT PROGRAMMER", "VR/AR ENTHUSIAST", "LIFELONG LEARNER" ]; // List of sentences
         var sentence = 0; // Current sentence being processed
         var charnumber = 0; // Character number of the current sentence being processed 
         var intervalnum; // Holds the handle returned from setInterval
@@ -420,9 +431,13 @@
           var currentClass = body.className;
           body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
         }
+           
+            
             
         /***** TRANSITIONING TOPNAV COLOR *****/
         window.onscroll = function() {scrollFunction()};  
+           
+            
             
         /***** SCROLL-TO-TOP BUTTON *****/
         function scrollFunction() {
@@ -434,12 +449,6 @@
             document.getElementById('logoimg').src = "Images/logo2.png";
             document.getElementById('dropimg').src = "Images/drop.png";
             document.getElementsByName('sun')[0].src = "Images/sun.png";
-              
-            var i = 0;
-            for (int i = o; i < 8; i++) {
-               document.getElementsByClassName('dropbtn')[i].style.color = "black";
-            }
-              
           } else {
             document.getElementById("topbtn").style.display = "none";
             document.getElementsByClassName('topnav')[0].style.backgroundColor = "transparent";
@@ -449,11 +458,6 @@
             document.getElementById('logoimg').src = "Images/logo.png";
             document.getElementById('dropimg').src = "Images/drop2.png";
             document.getElementsByName('sun')[0].src = "Images/sun2.png";
-              
-            var i = 0;
-            for (int i = o; i < 8; i++) {
-               document.getElementsByClassName('dropbtn')[i].style.color = "white";
-            }
           }
         }
 
@@ -464,8 +468,6 @@
         }
 
         </script>
-        
-        
         
     </body>
     

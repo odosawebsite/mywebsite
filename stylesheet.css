@@ -550,6 +550,7 @@
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
                 text-align: center;
+                text-decoration: underline;
             }
         /***** SECTION 4: EXPERIENCE END *****/
             
