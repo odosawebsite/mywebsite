@@ -315,7 +315,7 @@
             
         /***** SECTION 1: HOME *****/
             .hometitle {
-                font-size: 100; 
+                font-size: 80; 
                 color: white; 
                 font-weight: 700; 
                 text-align: center; 
@@ -324,7 +324,7 @@
             }
             
             #text {
-                font-size: 40; 
+                font-size: 35; 
                 font-weight: 600; 
                 color: white;
                 text-align: center;
