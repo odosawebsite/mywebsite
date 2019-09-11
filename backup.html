@@ -45,7 +45,7 @@
                     <button onclick="myFunction()" class="dropbtn"><img id="dropimg" src="Images/drop2.png"></button>
                         <div id="myDropdown" class="dropdown-content">
                             <!-- Dark/Light Toggle Button -->
-                            <a id="dltoggle" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><img name="sun" src="Images/sun2.png" width="45" height="45"></a>
+                            <!--<a id="dltoggle" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><img name="sun" src="Images/sun2.png" width="50" height="50"></a>-->
                             <a href=#home class="dropbtn">HOME</a>
                             <a href=#about class="dropbtn">ABOUT</a>
                             <a href=#projects class="dropbtn">CURRENT PROJECTS</a>
@@ -54,13 +54,16 @@
                             <!-- <a href=#accomplishments class="dropbtn">ACCOMPLISHMENTS</a -->
                             <a href=#interests class="dropbtn">INTERESTS</a>
                             <a href=#blog class="dropbtn">BLOG</a>
-                            <a href=#contact class="dropbtn">CONTACT</a>           
+                            <a href=#contact class="dropbtn">CONTACT</a><br>           
                         </div>
                 </div>
             </div>
 
             <!-- Scroll to top button -->
             <button onclick="topFunction()" id="topbtn"><img src="Images/up.png" class="topimg"></button>
+            
+            <!-- Dark/Light Toggle -->
+            <button onclick="toggleDarkLight()"  name="dark_light" id="dltoggle" title="Toggle dark/light mode"><img src="Images/sun.png" class="dlimg"></button>
 
             <!-- Home section -->
             <section id="home">
@@ -121,7 +124,7 @@
                                         I personally believe that in a world that is changing so fast with the exponential rise of technology, education is the one thing that hasn't changed. That's why I started <span style="font-weight: 600;">CountMeIn</span>, a passion project of mine that I started to help kids learn math in a more fun, effective way. 
                                     </p>
                                     <p class="boxpar"> 
-                                        If you'd like to chat more with me about CountMeIn, send me an email at <span style="font-weight: 600;">odosaobasuyi@gmail.com</span>.
+                                        If you'd to chat more with me about CountMeIn, send me an email at <span style="font-weight: 600;">odosaobasuyi@gmail.com</span>.
                                     </p><br> 
                             </div>
 
@@ -230,7 +233,7 @@
                             <img src="Images/lightbulb.png" class="boximg">
                             <p class="boxtitle">ENTREPRENEURSHIP</p>
                             <p class="boxpar"> 
-                                I have been part of a number of entrepreneurship programs including Future Design School (FDS), The Knowledge Society (TKS), and SHAD and I am the Co-Founder of Memofood.
+                                I have been part of a number of entrepreneurship programs including Future Design School (FDS), The Knowledge Society (TKS), and SHAD and am the Co-Founder of Memofood.
                             </p><br> 
                         </div>
 
@@ -422,13 +425,30 @@
         // Start the typing effect on load
         intervalnum = setInterval(Type, 60);
             
+        
+        
+        /***** CHANGE IMAGE *****/
+        var n = 0;
+
+        function changeImage() {
+          if ( n == 0 ) {
+            document.getElementsByClassName('dlimg')[0].src = "Images/sun.png";
+            n = 1;
+          }
+          else if ( n == 1 ) {
+            document.getElementsByClassName('dlimg')[0].src = "Images/moon.png";
+            n = 0;
+          }
+        }
+            
             
             
         /***** DARK/LIGHT TOGGLE *****/
         function toggleDarkLight() {
-          var body = document.getElementById("body");
-          var currentClass = body.className;
-          body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+            var body = document.getElementById("body");
+            var currentClass = body.className;
+            body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+            changeImage();
         }
            
             
@@ -442,21 +462,24 @@
         function scrollFunction() {
           if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
             document.getElementById("topbtn").style.display = "block";
+            document.getElementById("dltoggle").style.display = "block";
             document.getElementsByClassName('topnav')[0].style.backgroundColor = "white";
             document.getElementsByClassName('topnav')[0].style.boxShadow = "0px 8px 16px 0px rgba(0,0,0,0.2)";
             document.getElementsByClassName('dropdown-content')[0].style.backgroundColor = "white";
+            document.getElementsByClassName('dropdown-content')[0].style.opacity = "1";
             document.getElementById('logoimg').src = "Images/logo2.png";
             document.getElementById('dropimg').src = "Images/drop.png";
-            document.getElementsByName('sun')[0].src = "Images/sun.png";
+              
           } else {
             document.getElementById("topbtn").style.display = "none";
+            document.getElementById("dltoggle").style.display = "none";
             document.getElementsByClassName('topnav')[0].style.backgroundColor = "transparent";
             document.getElementsByClassName('topnav')[0].style.boxShadow = "none";
-            document.getElementsByClassName('dropdown-content')[0].style.backgroundColor = "transparent";
+            document.getElementsByClassName('dropdown-content')[0].style.backgroundColor = "black";
+            document.getElementsByClassName('dropdown-content')[0].style.opacity = "0.8";
             document.getElementsByClassName('dropdown-content')[0].style.color = "white";
             document.getElementById('logoimg').src = "Images/logo.png";
             document.getElementById('dropimg').src = "Images/drop2.png";
-            document.getElementsByName('sun')[0].src = "Images/sun2.png";
           }
         }
 
