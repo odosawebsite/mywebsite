@@ -12,6 +12,7 @@
 /* 9. Blog */
 /* 10. Contact */
 /* 11. Copyright */
+/* 12. Blog Page */
     
         /***** GENERAL *****/
             html {
@@ -54,6 +55,7 @@
                 background-color: #212121; 
                 color: white; 
                 text-align: center; 
+                
             }
             
             /* Light/Dark Mode */
@@ -398,78 +400,26 @@
             
             
         /***** SECTION 3: PROJECTS *****/
-            
-            /* Container 1*/
-            /*.container { 
-                width: 835px; 
-                height: 650px; 
-                padding-top: 20px;
-                padding-left: 15px; 
-                padding-right: 15px;
+            .projcontainer { 
+                display: flex;
+                flex-flow: row wrap; /* Flex direction: Determines direction flex items are placed in the flex container; Flex wrap: Allows items to fit on multiple lines. */
+                justify-content: space-around;
+                align-items: center;
+                min-height: 650px;
             } 
             
-            #leftbox { 
-                float: left; 
-                width: 265px; 
-                height: 600; 
-                border: black;
+            .projbox {
+                width: 375px; 
+                height: 450px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            }
-            
-            #leftbox:hover { 
-                float: left; 
-                width: 265px; 
-                height: 600; 
-                border: black;
-                box-shadow: 0px 16px 30px 10px rgba(0,0,0,0.2);
-            }
-            
-            #centerbox { 
-                float: left; 
-                width: 265px; 
-                height: 600; 
-                border: black; 
-                margin-left: 20px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            } 
-
-            #centerbox:hover { 
-                float: left; 
-                width: 265px; 
-                height: 600; 
-                border: black; 
-                margin-left: 20px;
-                box-shadow: 0px 16px 30px 10px rgba(0,0,0,0.2);
-            }
-            
-            #rightbox { 
-                float: right; 
-                width: 265px; 
-                height: 600; 
-                border: black;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                margin-bottom: 20;
             }
 
-            #rightbox:hover { 
-                float: right; 
-                width: 265px; 
-                height: 600; 
-                border: black;
+            .projbox:hover {
+                width: 375px; 
+                height: 450px;
                 box-shadow: 0px 16px 30px 10px rgba(0,0,0,0.2);
-            }*/
-
-            .box {
-                width: 70%; 
-                border: black; 
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                margin-bottom: 5%;
-            }
-
-            .box:hover {
-                width: 70%; 
-                border: black; 
-                box-shadow: 0px 16px 30px 10px rgba(0,0,0,0.2);
-                margin-bottom: 5%;
+                margin-bottom: 20;
             }
             
             .boximg {
@@ -500,7 +450,7 @@
         /***** SECTION 4: EXPERIENCE *****/
             
             /* Container 2 - Overlay Container */
-            .container2 {
+            .expcontainer {
                 position: relative;
                 width: 85%;
             }
@@ -525,7 +475,7 @@
                 background-color: ghostwhite;
             }
 
-            .container2:hover .overlay {
+            .expcontainer:hover .overlay {
                 opacity: 0.9;
              }
             /* Container 1 - Overlay Container End */
@@ -612,68 +562,26 @@
             
             
         /***** SECTION 6: INTERESTS *****/
-            .container3 { 
-                width: 835px; 
-                height: 400px; 
-                padding-top: 20px;
-                padding-left: 15px; 
-                padding-right: 15px;
+            .intcontainer { 
+                display: flex;
+                flex-flow: row wrap; /* Flex direction: Determines direction flex items are placed in the flex container; Flex wrap: Allows items to fit on multiple lines. */
+                justify-content: space-around;
+                align-items: center;
+                min-height: 650px;
             } 
             
-            #leftbox2 { 
-                float: left; 
-                width: 265px; 
-                height: 375px; 
-                /*background-color: #EFEFEF;*/ 
-                border: black;
+            .intbox {
+                width: 375px; 
+                height: 400px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                margin-bottom: 20;
             }
 
-            #leftbox2:hover { 
-                float: left; 
-                width: 265px; 
-                height: 375px; 
-                /*background-color: #EFEFEF;*/ 
-                border: black;
+            .intbox:hover {
+                width: 375px; 
+                height: 400px;
                 box-shadow: 0px 16px 30px 10px rgba(0,0,0,0.2);
-            } 
-            
-            #centerbox2 { 
-                float: left; 
-                width: 265px; 
-                height: 375px; 
-                /*background-color: #EFEFEF;*/  
-                border: black; 
-                margin-left: 20px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            }
-
-            #centerbox2:hover { 
-                float: left; 
-                width: 265px; 
-                height: 375px; 
-                /*background-color: #EFEFEF;*/  
-                border: black; 
-                margin-left: 20px;
-                box-shadow: 0px 16px 30px 10px rgba(0,0,0,0.2);
-            }
-            
-            #rightbox2 { 
-                float: right; 
-                width: 265px; 
-                height: 375px; 
-                /*background-color: #EFEFEF;*/ 
-                border: black;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            }
-
-            #rightbox2:hover { 
-                float: right; 
-                width: 265px; 
-                height: 375px; 
-                /*background-color: #EFEFEF;*/ 
-                border: black;
-                box-shadow: 0px 16px 30px 10px rgba(0,0,0,0.2);
+                margin-bottom: 20;
             }
         /***** SECTION 6: INTERESTS END *****/
             
@@ -706,6 +614,38 @@
                 margin-right: 15%; 
                 width: 30%;
                 transform: scale(1.5);
+            }
+
+            .blogbtn {
+                background-color: #252525; 
+                color: white; 
+                padding: 20px 20px;
+                font-family: IBM Plex Sans; 
+                font-size: 25; 
+                font-weight: 200;
+                border: none;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                cursor: pointer; 
+                
+                /* Center button */
+                margin: auto;
+                display: block;
+            }
+
+            .blogbtn:hover {
+                background-color: black; 
+                color: white; 
+                padding: 20px 20px;
+                font-family: IBM Plex Sans; 
+                font-size: 25;
+                font-weight: 200;
+                border: none;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                cursor: pointer; 
+                
+                /* Center button */
+                margin: auto;
+                display: block;
             }
         /***** SECTION 7: BLOG END *****/
             
@@ -821,6 +761,87 @@
                 opacity: 1;
             }
         /***** SECTION 9: COPYRIGHT END *****/
+
+
+        /***** SECTION 10: BLOG PAGE *****/
+
+            /* Back button */
+            .backbtn {
+                background-color: transparent;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: underline;
+                font-size: 15px;
+                font-weight: 300;
+                cursor: pointer; 
+                margin-top: 20; 
+            }
+
+            .blogcontainer {
+                display: flex;
+                flex-flow: row wrap; /* Flex direction: Determines direction flex items are placed in the flex container; Flex wrap: Allows items to fit on multiple lines. */
+                justify-content: space-around;
+                align-items: center;
+                min-height: 650px;
+                
+            }
+
+            .blogbox {
+                width: 400px; 
+                height: 500px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                margin-bottom: 20;
+            }
+
+            .blogbox:hover {
+                width: 400px; 
+                height: 500px;
+                box-shadow: 0px 16px 30px 10px rgba(0,0,0,0.2);
+                margin-bottom: 20;
+            }
+
+            .blogtitle {
+                margin-top: 20; 
+                margin-bottom: 30; 
+                font-weight: 600;
+                font-size: 20;
+            }
+
+            .blogbtn2 {
+                background-color: #252525; 
+                color: white; 
+                padding: 15px 20px;
+                font-family: IBM Plex Sans; 
+                font-size: 15; 
+                font-weight: 200;
+                border: none;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                cursor: pointer; 
+                
+                /* Center button */
+                margin: auto;
+                display: block;
+            }
+
+            .blogbtn2:hover {
+                background-color: black; 
+                color: white; 
+                padding: 15px 20px;
+                font-family: IBM Plex Sans; 
+                font-size: 15;
+                font-weight: 200;
+                border: none;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                cursor: pointer; 
+                
+                /* Center button */
+                margin: auto;
+                display: block;
+            }
+
+            
+        /***** SECTION 10: BLOG PAGE END *****/
 
     
 /* END - Stylesheet */ 

@@ -1,0 +1,240 @@
+<html>
+    
+    <title>Odosa Obasuyi</title>
+    
+    <head>
+        <!-- Random Stuff -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Icon -->
+        <link rel="icon" href = "Images/icon.ico">
+        
+        <!-- Google font: IBM Plex Sans -->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">
+            
+        <!-- Stylesheet -->
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
+        
+        <!-- Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    
+    <body id="body" class="light-mode" onload="loadingScreen()">
+        
+        <!-- Loader -->
+        <div class="gooey">
+            <!-- Dot 1 -->
+            <span class="dot"></span>
+            
+            <!-- Dots 2-4 -->
+            <div class="dots"><span></span><span></span><span></span></div>
+        </div>
+        
+        <!-- Loader vs Div -->
+        <div id="myDiv" class="animate-bottom">
+            
+            <!-- Topnav bar -->
+            <div class="topnav">
+                <!-- Logo -->
+                <a href=#home style="width: 15%;"><img id="logoimg" src="Images/logo.png"></a>
+
+                <!--Dropdown menu -->
+                <div class="dropdown">
+                    <button onclick=" location.href='index.html'" class="backbtn">BACK</button>
+                </div>
+            </div>
+
+            <!-- Scroll to top button -->
+            <button onclick="topFunction()" id="topbtn"><img src="Images/up.png" class="topimg"></button>
+            
+            <!-- Dark/Light Toggle -->
+            <button onclick="toggleDarkLight()"  name="dark_light" id="dltoggle" title="Toggle dark/light mode"><img src="Images/sun.png" class="dlimg"></button>
+            
+            
+            <!-- Home section -->
+            <section id="home">
+                <div class="graydiv" style="background-image: url(Images/blog.jpg);"><br><br><br><br><br><br><br><br>
+                    <!-- Title -->
+                    <p class="hometitle" style="font-size: 50;">MY BLOG PAGE</p><br><br><br><br><br><br><br><br>
+                </div>
+            </section>
+            
+            <!-- Blog section -->
+            <section id="blogs">
+                <div><br>
+                    <!-- Container -->
+                    <div class="blogcontainer">
+                        
+                        <div class="blogbox">
+                            <img src="Images/fitc.JPG" style="width: 400px; margin-bottom: 15;">
+                            <p class="blogtitle">FITC 2019</p>
+                            <p class="boxpar"> 
+                                FITC Web Unleashed 2019 taught me quite a few new things about front-end web development today...
+                            </p><br>
+                            <button onclick=" window.open('https://www.linkedin.com/pulse/my-takeaways-from-fitc-web-unleashed-2019-odosa-obasuyi/?trackingId=PI6e4Z49XshfK7LJhMcfqQ%3D%3D','_blank')" class="blogbtn2" ><i class="fa fa-book"></i> &nbsp READ MORE</button><br>
+                            <p style="float: right; margin-right: 20; font-size: 15; color: gray;">17/9/2019</p>
+                        </div>
+                        
+                        <div class="blogbox">
+                            <img src="Images/ar.jpg" style="width: 400px; margin-bottom: 15;">
+                            <p class="blogtitle">Everything About AR</p>
+                            <p class="boxpar" style="margin-bottom: 40;"> 
+                                Augmented reality is a huge passion of mine, and I took some time to see exactly what it is...
+                            </p><br>
+                            <button onclick=" window.open('https://www.linkedin.com/pulse/deeper-look-augmented-reality-odosa-obasuyi/?trackingId=KO49aHSvSuqrv%2FE4xAtFHQ%3D%3D','_blank')" class="blogbtn2" ><i class="fa fa-book"></i> &nbsp READ MORE</button><br>
+                            <p style="float: right; margin-right: 20; font-size: 15; color: gray;">8/8/2018</p>
+                        </div>
+                        
+                        <div class="blogbox">
+                            <img src="Images/moonshot.jpg" style="width: 400px; margin-bottom: 15;">
+                            <p class="blogtitle">TKS Moonshot Hackathon</p>
+                            <p class="boxpar" style="margin-bottom: 40;"> 
+                                My first hackathon was one filled with many memories, many lessons, and a lot of fun...
+                            </p><br>
+                            <button onclick=" window.open('https://www.linkedin.com/pulse/my-takeaways-from-moonshot-hackathon-odosa-obasuyi/?trackingId=YNqhBhCNzXsKVUaqYq28ng%3D%3D','_blank')" class="blogbtn2" ><i class="fa fa-book"></i> &nbsp READ MORE</button><br>
+                            <p style="float: right; margin-right: 20; font-size: 15; color: gray;">16/7/2018</p>
+                        </div>
+                        
+                        <div class="blogbox">
+                            <img src="Images/cityexpo.png" style="width: 400px; margin-bottom: 15;">
+                            <p class="blogtitle">World Smart City Expo</p>
+                            <p class="boxpar"> 
+                                The World Smart City Expo was my first tech conference and was an incredible experience for me...
+                            </p><br>
+                            <button onclick=" window.open('https://www.linkedin.com/pulse/attending-world-smart-city-expo-odosa-obasuyi/?trackingId=1wsRLT%2FFMytN1fh9vw0UzQ%3D%3D','_blank')" class="blogbtn2" ><i class="fa fa-book"></i> &nbsp READ MORE</button><br>
+                            <p style="float: right; margin-right: 20; font-size: 15; color: gray;">13/5/2018</p>
+                        </div>
+                        
+                        <div class="blogbox">
+                            <img src="Images/smartcity.jpg" style="width: 400px; margin-bottom: 15;">
+                            <p class="blogtitle">Smart City Breakdown</p>
+                            <p class="boxpar"> 
+                                I spent a bit of time reaseraching the conecpt of a smart city, how they work, and what they mean for our future... 
+                            </p><br>
+                            <button onclick=" window.open('https://www.linkedin.com/pulse/simple-breakdown-smart-city-odosa-obasuyi/?trackingId=PA8WeD%2Be3EMXve3NYLuA7Q%3D%3D','_blank')" class="blogbtn2" ><i class="fa fa-book"></i> &nbsp READ MORE</button><br>
+                            <p style="float: right; margin-right: 20; font-size: 15; color: gray;">16/3/2018</p>
+                        </div>
+                        
+                        <div class="blogbox">
+                            <img src="Images/iot.jpg" style="width: 400px; margin-bottom: 15;">
+                            <p class="blogtitle">Everything About IoT</p>
+                            <p class="boxpar"> 
+                                Ever wanted to know more about one of today's fastest growing technologies, the Internet of Things?
+                            </p><br>
+                            <button onclick=" window.open('https://www.linkedin.com/pulse/everything-you-need-know-internet-things-odosa-obasuyi/?trackingId=%2BjbQDyEBmdERKw4I6C1lmQ%3D%3D','_blank')" class="blogbtn2" ><i class="fa fa-book"></i> &nbsp READ MORE</button><br>
+                            <p style="float: right; margin-right: 20; font-size: 15; color: gray;">20/1/2018</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            
+            <!-- Copyright -->
+            <div class="copydiv"><br><br>
+                <!-- Contact Buttons -->
+                <a class="tooltip" href="https://www.linkedin.com/in/odosa-obasuyi-a2b62b150/" target="_blank"><img src="Images/linkedin2.png" class="copybtn" hspace="5;"><span class="tooltiptext">Odosa Obasuyi</span></a>
+                <a class="tooltip" href="https://github.com/od-obas1187" target="_blank"><img src="Images/github.png" class="copybtn" hspace="5;"><span class="tooltiptext">od-obas1187</span></a>
+                <a class="tooltip"><img src="Images/email.jpg" class="copybtn" hspace="5;"><span class="tooltiptext">odosaobasuyi @gmail.com</span></a>
+                <a class="tooltip"><img src="Images/phone.png" class="copybtn" hspace="5;"><span class="tooltiptext">Available upon request</span></a>
+
+                <!-- Copyright Statement -->
+                <center>
+                <br><p class="copytext">&copy; 2019 <span style="font-weight: 700; font-family: IBM Plex Sans;">ODOSA OBASUYI</span>. All Rights Reserved. </p> <p>Made by Odosa Obasuyi on <i class="fa fa-github"></i> using &nbsp;<img src="Images/brackets.png" width="22;"></p><br>
+                    
+                </center>
+
+            </div>
+            
+        </div>
+        
+
+        
+        <!-- Javascript -->
+        <script type="text/javascript">
+
+            
+            
+        /***** LOADING SCREEN *****/
+        var myVar;
+            
+        function stuff() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function loadingScreen() {
+            stuff();
+        }
+
+        function showPage() {
+          document.getElementsByClassName("gooey")[0].style.display = "none";
+          document.getElementsByClassName("dot")[0].style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+            
+        
+        
+        /***** CHANGE IMAGE *****/
+        var n = 0;
+
+        function changeImage() {
+          if ( n == 0 ) {
+            document.getElementsByClassName('dlimg')[0].src = "Images/sun.png";
+            n = 1;
+          }
+          else if ( n == 1 ) {
+            document.getElementsByClassName('dlimg')[0].src = "Images/moon.png";
+            n = 0;
+          }
+        }
+            
+            
+            
+        /***** DARK/LIGHT TOGGLE *****/
+        function toggleDarkLight() {
+            var body = document.getElementById("body");
+            var currentClass = body.className;
+            body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+            changeImage();
+        }
+           
+            
+            
+        /***** TRANSITIONING TOPNAV COLOR *****/
+        window.onscroll = function() {scrollFunction()};  
+           
+            
+            
+        /***** SCROLL-TO-TOP BUTTON *****/
+        function scrollFunction() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("topbtn").style.display = "block";
+            document.getElementById("dltoggle").style.display = "block";
+            document.getElementsByClassName('topnav')[0].style.backgroundColor = "white";
+            document.getElementsByClassName('topnav')[0].style.boxShadow = "0px 8px 16px 0px rgba(0,0,0,0.2)";
+            document.getElementById('logoimg').src = "Images/logo2.png";
+            document.getElementsByClassName('backbtn')[0].style.color = "black"
+              
+          } else {
+            document.getElementById("topbtn").style.display = "none";
+            document.getElementById("dltoggle").style.display = "none";
+            document.getElementsByClassName('topnav')[0].style.backgroundColor = "transparent";
+            document.getElementsByClassName('topnav')[0].style.boxShadow = "none";
+            document.getElementById('logoimg').src = "Images/logo.png";
+            document.getElementsByClassName('backbtn')[0].style.color = "white"
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+        </script>
+        
+    </body>
+    
+</html>
