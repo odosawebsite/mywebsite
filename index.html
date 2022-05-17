@@ -10,8 +10,11 @@
         <!-- Icon -->
         <link rel="icon" href = "Images/icon.ico">
         
-        <!-- Google font: IBM Plex Sans -->
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">
+        <!-- Google font: Rubik -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">-->
             
         <!-- Stylesheet -->
         <link href="stylesheet.css" rel="stylesheet" type="text/css">
@@ -38,14 +41,14 @@
             <!-- Topnav bar -->
             <div class="topnav">
                 <!-- Logo -->
-                <a href=#home style="width: 15%;"><img id="logoimg" src="Images/logo.png"></a>
+                <a href=#home style="width: 15%;"><img id="logoimg" src="Images/OO-top.png"></a>
 
                 <!--Dropdown menu -->
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn"><img id="dropimg" src="Images/drop2.png"></button>
                         <div id="myDropdown" class="dropdown-content">
                             <!-- Dark/Light Toggle Button -->
-                            <!--<a id="dltoggle" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><img name="sun" src="Images/sun2.png" width="50" height="50"></a>-->
+                            <!--<a id="dltoggle" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><img name="sun" src="Images/sun.png" width="50" height="50"></a>-->
                             <a href=#home class="dropbtn">HOME</a>
                             <a href=#about class="dropbtn">ABOUT</a>
                             <a href=#projects class="dropbtn">CURRENT PROJECTS</a>
@@ -67,8 +70,9 @@
 
             <!-- Home section -->
             <section id="home">
-                <div class="graydiv" style="background-image: url(Images/home.png);"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <!-- Title -->
+                <div style="background-image: url(Images/home.png); position:sticky;"><br><br><br><br><br><br><br><br><br><br><br>
+                    <!-- Intro + Title -->
+                    <p class="homeintro">I'm</p>
                     <p class="hometitle">ODOSA OBASUYI</p>
 
                     <!-- Typewriter (Also 696969 :) -->
@@ -81,15 +85,16 @@
 
             <!-- About section -->
             <section id="about">
-                <div><br><br><br><br>
+                <div class="regdiv"><br><br><br><br>
                     <!-- Title -->
-                    <h1>ABOUT ME</h1>
+                    <h2 class="light-mode">Hi!</h2>
+                    <h1 class="light-mode">This is who I am.</h1>
 
                     <!-- Me :) -->
                     <img src="Images/me.jfif" class="aboutimg">
 
                     <!-- Stuff about me -->
-                    <p class="aboutpar">Hi! <span style="font-weight: 300;"> I'm <span style="font-weight: 700;">Odosa Obasuyi</span>, a freshman at the University of Toronto, St. George, studying Computer Science. I have a passion for computer science and am interested in exponential technology (specifically virtual and augmented reality &amp; IoT (Internet of things)), entrepreneurship, and programming. I've created and been part of many projects focused on solving real-world problems at hackathons, tech and innovation-focused programs, and as personal side projects.</span></p>
+                    <p class="aboutpar"><span style="font-weight: 300;"> I'm <span style="font-weight: 700;">Odosa Obasuyi</span>, a freshman at the University of Toronto, St. George, studying Computer Science. I have a passion for computer science and am interested in exponential technology (specifically virtual and augmented reality &amp; IoT (Internet of things)), entrepreneurship, and programming. I've created and been part of many projects focused on solving real-world problems at hackathons, tech and innovation-focused programs, and as personal side projects.</span></p>
 
                     <p class="aboutpar2">My goal is to create a company that impacts billions of lives around the world for the better, and to make a permanent impact on our future.</p><br><br><br><br><br><br>
                 </div>
@@ -97,10 +102,10 @@
 
             <!-- Projects section -->
             <section id="projects">
-                <div class="graydiv"><br><br><br><br>
+                <div class="regdiv"><br><br><br><br>
                     <!-- Title -->
-                    <h2>WHAT AM I ...</h2>
-                    <h1>WORKING ON NOW</h1> 
+                    <h2 class="light-mode">Right now,</h2>
+                    <h1 class="light-mode">Here's what I'm working on.</h1> 
 
                     <!-- My projects -->
                     <div class="projcontainer">
@@ -109,34 +114,34 @@
                                 <img src="Images/memofood.png" class="boximg">
                                     <p class="boxtitle">MEMOFOOD</p>
                                     <p class="boxpar"> 
-                                        I am currently the co-founder of a company started in <span style="font-weight: 600;">SHAD</span> called Memofood. We are working on what we believe is a solution to food waste in Canada.
+                                        I am the co-founder of a company started in <span style="font-weight: 600;">SHAD</span> called Memofood, working on what I believe is a solution to food waste in Canada.
                                     </p>
                                     <p class="boxpar"> 
-                                        If you'd like to learn more about what we're about, you can visit our website at <a href="http://www.memofood.ca/" style="color: #4d4d4d; font-weight: 600; text-decoration: underline;">www.memofood.ca</a> for more info.
+                                        Right now, Memofood is going under a renovation! Currently the app and website are being built, more details coming soon!
                                     </p><br>
                             </div>
                         
                             <!-- Box 2 -->
                             <div class="projbox">
-                                <img src="Images/learning.png" class="boximg">
-                                    <p class="boxtitle">2D PLATFORMER (UNDECIDED NAME)</p>
+                                <img src="Images/db.png" class="boximg">
+                                    <p class="boxtitle">DOUGHBOY</p>
                                     <p class="boxpar"> 
-                                        I am currently building a 2D platformer game (name to be decided) - a passion project I've been working on for months - both to put my coding and Photoshop skills to the test and as a modernized tribute to my favorite retro games of the past.
+                                        I am currently building a 2D platformer game called Doughboy - a passion project I've been working on for months - both to put my coding and Photoshop skills to the test and as a modernized tribute to my favorite retro games of the past.
                                     </p>
                                     <p class="boxpar"> 
-                                        The demo will be available soon, so so send me an email at <span style="font-weight: 600;">odosaobasuyi@gmail.com</span> if you'd like to try it when it's available!
+                                        The demo of the first level is available upon request, so email <span style="font-weight: 600;">dbdemoofficial@gmail.com</span> to try it!
                                     </p><br>
                             </div>
 
                             <!-- Box 3 -->
                             <div class="projbox">
                                 <img src="Images/countmein.png" class="boximg">
-                                    <p class="boxtitle">COUNTMEIN</p>
+                                    <p class="boxtitle">LEARNING</p>
                                     <p class="boxpar"> 
-                                        I personally believe that in a world that is changing so fast with the exponential rise of technology, education is the one thing that hasn't changed. That's why I started <span style="font-weight: 600;">CountMeIn</span>, a passion project of mine that I started to help kids learn math in a more fun, effective way. 
+                                        Something I push myself to do is to make sure I'm always learning something new, so that I'm always growin and adapting my skillset to future jobs, internships, projects, and ventures.
                                     </p>
                                     <p class="boxpar"> 
-                                        If you'd to chat more with me about CountMeIn, send me an email at <span style="font-weight: 600;">odosaobasuyi@gmail.com</span>.
+                                        Currently learning about App Development and Data Engineering!
                                     </p><br> 
                             </div> 
                     </div><br><br><br><br>
@@ -146,19 +151,29 @@
 
             <!-- Experience -->
             <section id="experience">
-                <div><br><br><br><br>
+                <div class="regdiv"><br><br><br><br>
                     <!-- Title -->
-                    <h2>WHAT HAVE I ...</h2>
-                    <h1>BEEN UP TO</h1>
+                    <h2 class="light-mode">So far,</h2>
+                    <h1 class="light-mode">These are my experiences!</h1>
 
                     <center>
                         <!-- UofT -->
                         <div class="expcontainer">
                             <img src="Images/uoft.jpg" class="image">
                             <div class="overlay">
-                                <div class="text2">UofT (FRESHMAN)</div>
+                                <div class="text2">UofT (Freshman)</div>
                                 <div class="text3">University of Toronto (UofT) is a globally top-ranked public research university located in Toronto, Ontario, Canada. Their Computer Science program is currently the top-ranked in Canada, and one of the highest ranked in the world.</div>
-                                <a class="text4" href="https://www.utoronto.ca/" target="_blank">www.utoronto.ca</a>
+                                <button onclick=" window.open('https://www.utoronto.ca/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
+                            </div>
+                        </div><br>
+                        
+                        <!-- Google CSSI -->
+                        <div class="expcontainer">
+                            <img src="Images/cssi.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text2">Google CSSI (Alumni)</div>
+                                <div class="text3">CSSI is an online, four-week introduction to computer science (CS) for rising first year college students with a passion for technology, and seeks to inspire the tech leaders and innovators of tomorrow and build self confidence, agency, and efficacy.</div>
+                                <button onclick=" window.open('https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
                             </div>
                         </div><br>
                         
@@ -166,29 +181,29 @@
                         <div class="expcontainer">
                             <img src="Images/memofood.jpg" class="image">
                             <div class="overlay">
-                                <div class="text2">MEMOFOOD (CO-FOUNDER)</div>
+                                <div class="text2">Memofood (Co-Founder)</div>
                                 <div class="text3">Memofood is a company whose goal is to reduce food waste by reminding users of their food's expiry dates, decreasing one of the leading causes of food waste in North America.</div>
-                                <a class="text4" href="http://www.memofood.ca/" target="_blank">www.memofood.ca</a>
+                                <button onclick=" window.open('https://www.utoronto.ca/','_blank')" class="expbtn"><i class="fa fa-balance-scale"></i> &nbsp (Website coming soon!)</button>
                             </div>
                         </div><br>
 
                         <!-- SHAD -->
                         <div class="expcontainer">
-                            <img src="Images/shad.jpg" class="image">
+                            <img src="Images/shad2.jpg" class="image">
                             <div class="overlay">
-                                <div class="text2">SHAD (ALUMNI)</div>
+                                <div class="text2">SHAD (Alumni)</div>
                                 <div class="text3">SHAD is a STEAM program for students in Grade 10 and 11. It is a month-long program that prepares students to take on social and economic challenges.</div>
-                                <a class="text4" href="https://www.shad.ca/" target="_blank">www.shad.ca</a>
+                                <button onclick=" window.open('https://www.shad.ca/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
                             </div>
                         </div><br>
 
                         <!-- TKS -->
                         <div class="expcontainer">
-                            <img src="Images/tks.jpg" class="image">
+                            <img src="Images/tks2.jpg" class="image">
                             <div class="overlay">
-                                <div class="text2">TKS (ALUMNI)</div>
+                                <div class="text2">TKS (Alumni)</div>
                                 <div class="text3">The Knowledge Society (TKS) is Canada's leading innovation incubator for young leaders age 13-17. TKS develops ambitious young people to impact billions using emerging technologies.</div>
-                                <a class="text4" href="https://theksociety.com/" target="_blank">www.tks.com</a>
+                                <button onclick=" window.open('https://theksociety.com/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
                             </div>
                         </div><br>
                         
@@ -196,44 +211,32 @@
                         <div class="expcontainer">
                             <img src="Images/fds.jpg" class="image">
                             <div class="overlay">
-                                <div class="text2">FDS (ALUMNI)</div>
+                                <div class="text2">FDS (Alumni)</div>
                                 <div class="text3">Future Design School (FDS) empowers students with the skills they need to be ready for the future, while helping hundreds of students in dozens of cities to learn skills in app design.</div>
-                                <a class="text4" href="https://futuredesignschool.com/" target="_blank">www.fds.com</a>
+                                <button onclick=" window.open('https://futuredesignschool.com/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
                             </div>
                         </div><br>
 
                         <!-- UCC -->
                         <div class="expcontainer">
-                            <img src="Images/ucc.jpg" class="image">
+                            <img src="Images/ucc2.jpg" class="image">
                             <div class="overlay">
-                                <div class="text2">UCC (OLD-BOY)</div>
+                                <div class="text2">UCC (Old Boy)</div>
                                 <div class="text3">Upper Canada College (UCC) is an IB World School that enrolls 1,160 boys in Senior Kindergarten through Year 12, and has 10,000 alumni in more than 75 countries.</div>
-                                <a class="text4" href="http://ucc.on.ca/" target="_blank">www.ucc.on.ca</a>
+                                <button onclick=" window.open('http://ucc.on.ca/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
                             </div>
                         </div><br>
                     </center><br><br><br><br><br>
 
                 </div>
             </section>
-
-            <!-- Portfolio section -->
-            <section id="portfolio">
-                <div class="graydiv"><br><br><br><br>
-                    <!-- Title -->
-                    <h2>WHERE CAN YOU ...</h2>
-                    <h1>GET MY PORTFOLIO</h1>
-
-                    <!-- Resume Button -->        
-                    <button onclick=" window.open('Images/My Resume.jpg','_blank')" class="downloadbtn"><i class="fa fa-download"></i> &nbsp DOWNLOAD MY RESUME</button><br><br><br><br><br>
-                </div>
-            </section>
-
+            
             <!-- Interests section -->
             <section id="interests">
-                <div><br><br><br><br>
+                <div class="regdiv"><br><br><br><br>
                     <!-- Title -->
-                    <h2>WHAT AM I ...</h2>
-                    <h1>INTERESTED IN</h1>
+                    <h2 class="light-mode">Keeping it short,</h2>
+                    <h1 class="light-mode">Here's what I'm interested in!</h1>
 
                     <!-- Container 1 -->
                     <div class="intcontainer">
@@ -249,9 +252,9 @@
                         <!-- Box 2 -->
                         <div class="intbox">
                             <img src="Images/vr.png" class="boximg">
-                            <p class="boxtitle">VR/AR</p>
+                            <p class="boxtitle">EXPONENTIAL TECH</p>
                             <p class="boxpar"> 
-                                Virtual and Augmented Reality is a revolutionary technology that excites me, and I have written a few articles on Linkedin on it, as well as talking about it on my YouTube channel. 
+                                I'm really interested in exponential tech, and I have written a few articles on Linkedin on them, as well as talking about it on YouTube.
                             </p><br> 
                         </div>
 
@@ -288,7 +291,7 @@
                             <img src="Images/other.png" class="boximg">
                             <p class="boxtitle">OTHER INTERESTS</p>
                             <p class="boxpar"> 
-                                Some of my other interests include soccer, taekwondo, playing the alto saxophone, drawing, reading, debating, coding, and just chilling with friends. 
+                                Some of my other interests include soccer, taekwondo, playing the alto saxophone, drawing, reading, debating, coding, and walking to new areas I haven't been before. 
                             </p><br> 
                         </div> 
                     </div>
@@ -297,57 +300,41 @@
 
                 </div>
             </section>
-
-            <!-- Accomplishments section (Update after next year) -->
-            <!-- <section id="accomplishments">
-                <div style="background-color: white;"><br>
-                    <!-- Title -->
-                    <!-- <p style="font-size: 55; text-align: center; margin-top: 60px; margin-bottom: 45px;">Accomplishments</p> -->
-
-                    <!-- Line -->
-                    <!--<svg height="50" width="1300">
-                      <line x1="635" x2="790" style="stroke:rgb(0,0,64); stroke-width:5"/>
-                    </svg> 
-                </div>
-            </section> -->
-
+            
             <!-- Blog section -->
             <section id="blog">
-                <div class="graydiv"><br><br><br><br>
+                <div class="regdiv"><br><br><br><br>
                     <!-- Title -->
-                    <h2>WHERE DO I ...</h2>
-                    <h1>BLOG</h1>
+                    <h2 class="light-mode">Want to know more about what I'm doing?</h2>
+                    <h1 class="light-mode">This is where I blog.</h1>
 
                     <!-- Buttons -->
                     <a href="https://www.linkedin.com/in/odosa-obasuyi-a2b62b150/detail/recent-activity/posts/" target="_blank"><img src="Images/linkedin.png" class="blogimg"></a>
                     <a href="https://www.youtube.com/channel/UCqpq4BIysSdo2eV1c7mTazw" target="_blank"><img src="Images/youtube.png" class="blogimg2"></a><br><br><br><br><br><br><br><br><br><br>
                     
                     <!-- Blog Button -->        
-                    <button onclick=" window.open('blogs.html','_blank')" class="blogbtn"><i class="fa fa-book"></i> &nbsp READ MY BLOGS!</button>
+                    <button onclick=" window.open('blogs.html','_blank')" class="blogbtn"><i class="fa fa-book"></i> &nbsp Read my blogs!</button>
                     
                     <br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </section>
+
+            <!-- Portfolio section -->
+            <section id="portfolio">
+                <div class="regdiv"><br><br><br><br>
+                    <!-- Title -->
+                    <h2 class="light-mode">Let's work together!</h2>
+                    <h1 class="light-mode">Here's my portfolio.</h1>
+
+                    <!-- Resume Button -->        
+                    <button onclick=" window.open('Images/resume.jpg','_blank')" class="downloadbtn"><i class="fa fa-download"></i> &nbsp Download my resume</button><br><br><br><br><br>
                 </div>
             </section>
         
             <!-- Contact section -->
             <section id="contact">
-                <div><br><br><br><br>
-                    <!-- Title -->
-                    <h2>HOW CAN YOU ...</h2>
-                    <h1>GET IN TOUCH</h1>
-
-                    <!-- Contact form -->
-                    <div class="contact">
-                        <form action="mailto:odosaobasuyi@gmail.com" method="post" enctype="text/plain">
-                            <input type="text" id="name" name="name" placeholder="Your name...">
-                            <input type="text" id="email" name="email" placeholder="Your email...">
-                            <input type="text" id="subject" name="email" placeholder="Your subject...">
-                            <textarea id="message" name="message" placeholder="Your Message..." style="height:200px;"></textarea>
-                            <center><input type="submit" value="Send Message"></center>
-                        </form>
-                    </div>
-                    <br><br><br><br><br> 
-                </div>
+                <div data-tf-widget="gua0jY1c" data-tf-opacity="0" data-tf-iframe-props="title=My Website Contact Survey" data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="https://embed.typeform.com/next/embed.js"></script>
+                <br><br><br><br><br>
             </section>
             
             <!-- Copyright -->
@@ -360,7 +347,7 @@
 
                 <!-- Copyright Statement -->
                 <center>
-                <br><p class="copytext">&copy; 2021 <span style="font-weight: 700; font-family: IBM Plex Sans;">ODOSA OBASUYI</span>. All Rights Reserved. </p> <p>Made by Odosa Obasuyi on <i class="fa fa-github"></i> using &nbsp;<img src="Images/brackets.png" width="22;"></p><br>
+                <br><p class="copytext">&copy; 2022 <span style="font-weight: 700; font-family: 'Rubik', sans-serif;">ODOSA OBASUYI</span>. All Rights Reserved. </p> <p>Made by Odosa Obasuyi on <i class="fa fa-github"></i> using the Brackets IDE</p><br>
                     
                 </center>
 
@@ -422,7 +409,7 @@
             charnumber--;
 
             // If sentence has been deleted then start to display the next sentence
-            if(text === '') {
+            if(text.length == 1) {
                 clearInterval(intervalnum);
 
                 // If last sentence then display the first one, else move to the next
@@ -433,7 +420,8 @@
                 charnumber = 0;
 
                 // Start to display the next sentence after some time
-                setTimeout(function() {intervalnum = setInterval(Type, 80);}, 200);
+                //setTimeout(function() {intervalnum = setInterval(Type, 80);}, 200);
+                setTimeout(function() {intervalnum = setInterval(Type, 80);}, 0);
             }
         }
 
@@ -463,6 +451,19 @@
             var body = document.getElementById("body");
             var currentClass = body.className;
             body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+            
+            var h1 = document.getElementsByTagName("h1");
+            for (var i=0; i<h1.length; i++) {
+                var h1CurrentClass = h1[i].className;
+                h1[i].className = h1CurrentClass == "dark-mode" ? "light-mode" : "dark-mode";
+            }
+            
+            var h2 = document.getElementsByTagName("h2");
+            for (var j=0; j<h2.length; j++){
+                var h2CurrentClass = h2[j].className;
+                h2[j].className = h2CurrentClass == "dark-mode" ? "light-mode" : "dark-mode";
+            }
+            
             changeImage();
         }
            
@@ -481,8 +482,9 @@
             document.getElementsByClassName('topnav')[0].style.backgroundColor = "white";
             document.getElementsByClassName('topnav')[0].style.boxShadow = "0px 8px 16px 0px rgba(0,0,0,0.2)";
             document.getElementsByClassName('dropdown-content')[0].style.backgroundColor = "white";
+            document.getElementsByClassName('dropdown-content')[0].style.color = "#010257";
             document.getElementsByClassName('dropdown-content')[0].style.opacity = "1";
-            document.getElementById('logoimg').src = "Images/logo2.png";
+            document.getElementById('logoimg').src = "Images/OO-scroll.png";
             document.getElementById('dropimg').src = "Images/drop.png";
               
           } else {
@@ -493,7 +495,7 @@
             document.getElementsByClassName('dropdown-content')[0].style.backgroundColor = "black";
             document.getElementsByClassName('dropdown-content')[0].style.opacity = "0.8";
             document.getElementsByClassName('dropdown-content')[0].style.color = "white";
-            document.getElementById('logoimg').src = "Images/logo.png";
+            document.getElementById('logoimg').src = "Images/OO-top.png";
             document.getElementById('dropimg').src = "Images/drop2.png";
           }
         }

@@ -22,7 +22,7 @@
             body {
                 height: 100%;
                 margin: 0;
-                font-family: IBM Plex Sans, IBM Plex Sans, IBM Plex Sans;
+                font-family: 'Rubik', sans-serif;
                 font-weight: lighter;
             }
             
@@ -30,11 +30,12 @@
                 margin:0;
                 padding:0;
                 line-height: 0;
+/*                color: #010257;*/
             }
             
             h1 {
                 font-size: 45; 
-                font-weight: 500; 
+                font-weight: 600; 
                 text-align: center;
                 margin-top: 10px; 
                 margin-bottom: 50px;
@@ -42,9 +43,13 @@
             
             h2 {
                 font-size: 20; 
-                font-weight: 300; 
+                font-weight: 500; 
                 text-align: center; 
                 margin-top: 60px;
+            }
+
+            .regdiv {
+/*                color: #010257;*/
             }
             
             .graydiv {
@@ -52,7 +57,7 @@
             }
             
             .copydiv {
-                background-color: #212121; 
+                background-color: #191924; 
                 color: white; 
                 text-align: center; 
                 
@@ -60,12 +65,21 @@
             
             /* Light/Dark Mode */
             body.dark-mode {
-                background-color: #1C1C1C;
+/*                background-color: #1C1C1C;*/
+                background-color: #0c0c1a;
                 color: #f0f0f0;
             }
             
             p.dark-mode {
                 color: #f0f0f0;
+            }
+
+            h1.dark-mode {
+                color: #dcdcfa;
+            }
+
+            h2.dark-mode {
+                color: #dcdcfa;
             }
             
             /*body.dark-mode button {
@@ -80,6 +94,14 @@
             
             p.light-mode {
                 color: #323232;
+            }
+
+            h1.light-mode {
+                color: #1c1c3b;
+            }
+
+            h2.light-mode {
+                color: #1c1c3b;
             }
             
             /*body.light-mode button {
@@ -177,7 +199,7 @@
                 top: 0px;
                 width: 100%;
                 position: fixed;
-                background-color: transparent;
+                background-color: rgba(0, 0, 0, 0.5);
                 overflow: hidden;
                 z-index: 2;
               
@@ -252,7 +274,8 @@
             }
             
             .dropdown-content a:hover {
-                color: #d4d4d4;
+                color: #dcdcfa;
+                /*color: #a1a1a1;*/
             }
 
             .dropdown:hover .dropdown-content {
@@ -290,8 +313,8 @@
 
             /* Logo */
             #logoimg {
-                width: 40px; 
-                height: 36px; 
+                width: 50px; 
+                height: 55px; 
                 float: left; 
                 margin-left: 20%; 
                 padding: 10px 10px;
@@ -299,9 +322,9 @@
 
             /* Dropdown Image */
             #dropimg {
-                width: 24px; 
-                height: 20px; 
-                margin-right: 40%; 
+                width: 33px; 
+                height: 26px; 
+                margin-right: 50%; 
                 margin-top: 10px; 
                 padding: 10px 10px;
             }
@@ -335,6 +358,15 @@
             
             
         /***** SECTION 1: HOME *****/
+            .homeintro {
+                font-size: 60; 
+                color: white; 
+                font-weight: 700; 
+                text-align: center; 
+                margin-bottom: 20px; 
+                line-height: 1.1;
+            }
+
             .hometitle {
                 font-size: 80; 
                 color: white; 
@@ -452,7 +484,7 @@
             /* Container 2 - Overlay Container */
             .expcontainer {
                 position: relative;
-                width: 85%;
+                width: 50%;
             }
 
             .image {
@@ -479,10 +511,46 @@
                 opacity: 0.9;
              }
             /* Container 1 - Overlay Container End */
-            
+
+            .expbtn {
+                background-color: #020238; 
+                color: white; 
+                padding: 15px 15px;
+                font-family: 'Rubik', sans-serif; 
+                font-size: 15; 
+                font-weight: 200;
+                border: none;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                cursor: pointer; 
+                position: relative;
+                top: 75%;
+                
+                /* Center button */
+                margin: auto;
+                display: block;
+            }
+
+            .expbtn:hover {
+                background-color: #000017; 
+                color: white; 
+                padding: 15px 15px;
+                font-family: 'Rubik', sans-serif; 
+                font-size: 15;
+                font-weight: 200;
+                border: none;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                cursor: pointer; 
+                position: relative;
+                top: 75%;
+                
+                /* Center button */
+                margin: auto;
+                display: block;
+            }
+
             .text2 {
                 color: #272727;
-                font-size: 40px;
+                font-size: 30px;
                 font-weight: 700;
                 position: absolute;
                 top: 10%;
@@ -527,10 +595,10 @@
             
         /***** SECTION 5: PORTFOLIO *****/
             .downloadbtn {
-                background-color: #252525; 
+                background-color: #020238; 
                 color: white; 
                 padding: 20px 20px;
-                font-family: IBM Plex Sans; 
+                font-family: 'Rubik', sans-serif; 
                 font-size: 25; 
                 font-weight: 200;
                 border: none;
@@ -543,10 +611,10 @@
             }
 
             .downloadbtn:hover {
-                background-color: black; 
+                background-color: #000017; 
                 color: white; 
                 padding: 20px 20px;
-                font-family: IBM Plex Sans; 
+                font-family: 'Rubik', sans-serif; 
                 font-size: 25;
                 font-weight: 200;
                 border: none;
@@ -617,10 +685,10 @@
             }
 
             .blogbtn {
-                background-color: #252525; 
+                background-color: #020238; 
                 color: white; 
                 padding: 20px 20px;
-                font-family: IBM Plex Sans; 
+                font-family: 'Rubik', sans-serif; 
                 font-size: 25; 
                 font-weight: 200;
                 border: none;
@@ -633,10 +701,10 @@
             }
 
             .blogbtn:hover {
-                background-color: black; 
+                background-color: #000017; 
                 color: white; 
                 padding: 20px 20px;
-                font-family: IBM Plex Sans; 
+                font-family: 'Rubik', sans-serif; 
                 font-size: 25;
                 font-weight: 200;
                 border: none;
@@ -670,17 +738,17 @@
                 box-sizing: border-box;
                 margin-top: 6px;
                 margin-bottom: 16px;
-                font-family: IBM Plex Sans;
+                font-family: 'Rubik', sans-serif;
                 font-size: 15;
                 resize: vertical;
             }
 
             input[type=submit] {
-                background-color: #252525;
+                background-color: #020238;
                 color: white;
                 font-size: 15;
                 font-weight: 500;
-                font-family: IBM Plex Sans;
+                font-family: 'Rubik', sans-serif;
                 padding: 12px 20px;
                 border: none;
                 border-radius: 4px;
@@ -689,7 +757,7 @@
             }
 
             input[type=submit]:hover {
-                background-color: black;
+                background-color: #000017;
                 color: white;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             }
@@ -712,7 +780,7 @@
             }
             
             .copytext {
-                font-family: IBM Plex Sans;
+                font-family: 'Rubik', sans-serif;
                 margin-top: 10;
                 line-height: 1.5;
                 text-align: center;
@@ -741,7 +809,7 @@
                 margin-left: -60px;
                 opacity: 0;
                 transition: opacity 0.3s;
-                font-family: IBM Plex Sans; 
+                font-family: 'Rubik', sans-serif; 
                 font-weight: 300;
             }
 
@@ -771,11 +839,26 @@
                 color: white;
                 text-align: center;
                 padding: 14px 16px;
-                text-decoration: underline;
+                /*text-decoration: underline;*/
                 font-size: 15px;
                 font-weight: 300;
                 cursor: pointer; 
                 margin-top: 20; 
+                border-color: white;
+            }
+
+            .backbtn:hover {
+                background-color: transparent;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                /*text-decoration: underline;*/
+                box-shadow: 0px 16px 30px 10px rgba(0,0,0,0.2);
+                font-size: 15px;
+                font-weight: 300;
+                cursor: pointer; 
+                margin-top: 20; 
+                border-color: white;
             }
 
             .blogcontainer {
@@ -809,10 +892,10 @@
             }
 
             .blogbtn2 {
-                background-color: #252525; 
+                background-color: #020238; 
                 color: white; 
                 padding: 15px 20px;
-                font-family: IBM Plex Sans; 
+                font-family: 'Rubik', sans-serif; 
                 font-size: 15; 
                 font-weight: 200;
                 border: none;
@@ -825,10 +908,10 @@
             }
 
             .blogbtn2:hover {
-                background-color: black; 
+                background-color: #000017; 
                 color: white; 
                 padding: 15px 20px;
-                font-family: IBM Plex Sans; 
+                font-family: 'Rubik', sans-serif; 
                 font-size: 15;
                 font-weight: 200;
                 border: none;
