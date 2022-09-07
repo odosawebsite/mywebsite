@@ -18,6 +18,7 @@
             
         <!-- Stylesheet -->
         <link href="stylesheet.css" rel="stylesheet" type="text/css">
+        <link href="slideshow.css" rel="stylesheet" type="text/css">
         
         <!-- Icon Library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -94,7 +95,20 @@
                     <img src="Images/me.jfif" class="aboutimg">
 
                     <!-- Stuff about me -->
-                    <p class="aboutpar"><span style="font-weight: 300;"> I'm <span style="font-weight: 700;">Odosa Obasuyi</span>, a freshman at the University of Toronto, St. George, currently studying Computer Science, Computational Cognitive Science, and Math. I have a passion for software development and am interested in exponential technology (specifically virtual and augmented reality &amp; IoT (Internet of things)), entrepreneurship, and programming. I've created and been part of many projects focused on solving real-world problems at hackathons, tech and innovation-focused programs, and as personal side projects.</span></p>
+                    <p class="aboutpar"><span style="font-weight: 300;"> I'm <span style="font-weight: 700;">Odosa Obasuyi</span>, a 
+                        sophomore at the University of Toronto, St. George, currently studying Computer Science, Computational Cognitive 
+                        Science, and Math. I have a passion for software development and am interested in exponential technology 
+                        (specifically virtual and augmented reality &amp; IoT (Internet of things)), entrepreneurship, and programming. 
+                        I've created and been part of many projects focused on solving real-world problems at hackathons, tech and 
+                        innovation-focused programs, and as personal side projects.</span>
+                    </p>
+
+                    <p class="aboutpar" style="font-weight: 300;">
+                        Right now, I'd say front end website development (HTML, CSS, JavaScript), 2D game development (Java & Photoshop), 
+                        data analysis + visualization + web scraping (IBM Cloud, Python, R, SQL, Jupyter Notebook), machine learning 
+                        (Python - specifically Scikit learn), and project management/business orientation (Git, other projects shown
+                        below) are things I'm skilled at. Always trying to add more; app development and React are next up!
+                    </p>
 
                     <p class="aboutpar2">My goal is to create a company that impacts billions of lives around the world for the better, and to make a permanent impact on our future.</p><br><br><br><br><br><br>
                 </div>
@@ -104,12 +118,67 @@
             <section id="projects">
                 <div class="regdiv"><br><br><br><br>
                     <!-- Title -->
-                    <h2 class="light-mode">Right now,</h2>
-                    <h1 class="light-mode">Here's what I'm working on.</h1> 
+                    <h2 class="light-mode">Currently,</h2>
+                    <h1 class="light-mode">Here are all my major projects!</h1> 
 
                     <!-- My projects -->
-                    <div class="projcontainer">
-                         <!-- Box 1 -->
+                    <div class="container">
+                        <div class="wgh-slider">
+                          <input class="wgh-slider-target" type="radio" id="slide-1" name="slider" checked="checked"/>
+                          <input class="wgh-slider-target" type="radio" id="slide-2" name="slider"/>
+                          <input class="wgh-slider-target" type="radio" id="slide-3" name="slider"/>
+                          <input class="wgh-slider-target" type="radio" id="slide-4" name="slider"/>
+                          <input class="wgh-slider-target" type="radio" id="slide-5" name="slider"/>
+                          <div class="wgh-slider__viewport">
+                            <div class="wgh-slider__viewbox">
+                              <div class="wgh-slider__container">
+                                <div class="wgh-slider-item" id="modalbtn1">
+                                  <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="Images/memofoodslide.png" alt="Healthy Food Heart"/>
+                                      <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">Memofood</a><span>Tackling Food Waste In Canada</span></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-1" title="Show product 1"></label>
+                                  </div>
+                                </div>
+                                <div class="wgh-slider-item" id="modalbtn2">
+                                  <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="Images/localbundlesslide.jpg" alt="Local Restaurant"/>
+                                      <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">Local Bundles</a><span>Helping Neighbourhood Restaurants During COVID-19</span></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-2" title="Show product 2"></label>
+                                  </div>
+                                </div>
+                                <div class="wgh-slider-item" id="modalbtn3">
+                                  <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="Images/doughslide.jpg" alt="Dough"/>
+                                      <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">Doughboy</a><span>A Retro-Inspired 2D Platformer</span></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-3" title="Show product 3"></label>
+                                  </div>
+                                </div>
+                                <div class="wgh-slider-item" id="modalbtn4">
+                                  <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="Images/spacexslide.jpg" alt="Rocket Blueprints"/>
+                                      <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">Using ML to Analyze SpaceX's Launches</a><span>My IBM Data Science Capstone Project</span></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-4" title="Show product 4"></label>
+                                  </div>
+                                </div>
+                                <div class="wgh-slider-item" id="modalbtn5">
+                                  <div class="wgh-slider-item__inner">
+                                    <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="Images/bluepinkslide.jpg" alt="Blue and Pink Sky"/>
+                                      <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">My Biggest Project to Date!</a><span>(To be announced soon)</span></figcaption>
+                                    </figure>
+                                    <label class="wgh-slider-item__trigger" for="slide-5" title="Show product 5"></label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- <div class="projcontainer">
                             <div class="projbox"> 
                                 <img src="Images/memofood.png" class="boximg">
                                     <p class="boxtitle">MEMOFOOD</p>
@@ -121,7 +190,6 @@
                                     </p><br>
                             </div>
                         
-                            <!-- Box 2 -->
                             <div class="projbox">
                                 <img src="Images/db.png" class="boximg">
                                     <p class="boxtitle">DOUGHBOY</p>
@@ -133,7 +201,6 @@
                                     </p><br>
                             </div>
 
-                            <!-- Box 3 -->
                             <div class="projbox">
                                 <img src="Images/countmein.png" class="boximg">
                                     <p class="boxtitle">LEARNING</p>
@@ -144,7 +211,8 @@
                                         Currently learning about App Development and Data Engineering!
                                     </p><br> 
                             </div> 
-                    </div><br><br><br><br>
+                    </div> -->
+                    <br><br><br><br>
 
                 </div>
             </section>
@@ -161,9 +229,19 @@
                         <div class="expcontainer">
                             <img src="Images/uoft.jpg" class="image">
                             <div class="overlay">
-                                <div class="text2">UofT (Freshman)</div>
+                                <div class="text2">UofT (Sophomore)</div>
                                 <div class="text3">University of Toronto (UofT) is a globally top-ranked public research university located in Toronto, Ontario, Canada. Their Computer Science program is currently the top-ranked in Canada, and one of the highest ranked in the world.</div>
-                                <button onclick=" window.open('https://www.utoronto.ca/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
+                                <button onclick=" window.open('https://www.utoronto.ca/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check them out!</button>
+                            </div>
+                        </div><br>
+
+                        <!-- UofT -->
+                        <div class="expcontainer">
+                            <img src="Images/wooyourboo.png" class="image">
+                            <div class="overlay">
+                                <div class="text2">WooYourBoo (Intern)</div>
+                                <div class="text3">WooYourBoo is a Toronto-based startup focused on building strong, fun relationships. The app lets you & your boo swipe and match on date ideas in your area.</div>
+                                <button onclick=" window.open('https://www.wooyourboo.com/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check them out!</button>
                             </div>
                         </div><br>
                         
@@ -173,7 +251,7 @@
                             <div class="overlay">
                                 <div class="text2">Google CSSI (Alumni)</div>
                                 <div class="text3">CSSI is an online, four-week introduction to computer science (CS) for rising first year college students with a passion for technology, and seeks to inspire the tech leaders and innovators of tomorrow and build self confidence, agency, and efficacy.</div>
-                                <button onclick=" window.open('https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
+                                <button onclick=" window.open('https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check them out!</button>
                             </div>
                         </div><br>
                         
@@ -193,7 +271,7 @@
                             <div class="overlay">
                                 <div class="text2">SHAD (Alumni)</div>
                                 <div class="text3">SHAD is a STEAM program for students in Grade 10 and 11. It is a month-long program that prepares students to take on social and economic challenges.</div>
-                                <button onclick=" window.open('https://www.shad.ca/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
+                                <button onclick=" window.open('https://www.shad.ca/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check them out!</button>
                             </div>
                         </div><br>
 
@@ -203,7 +281,17 @@
                             <div class="overlay">
                                 <div class="text2">TKS (Alumni)</div>
                                 <div class="text3">The Knowledge Society (TKS) is Canada's leading innovation incubator for young leaders age 13-17. TKS develops ambitious young people to impact billions using emerging technologies.</div>
-                                <button onclick=" window.open('https://theksociety.com/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
+                                <button onclick=" window.open('https://theksociety.com/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check them out!</button>
+                            </div>
+                        </div><br>
+
+                        <!-- BETA Camp -->
+                        <div class="expcontainer">
+                            <img src="Images/betacamp.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text2">BETA Camp (Alumni)</div>
+                                <div class="text3">BETA Camp is a summer bootcamp where ambitious middle and high school students come to accelerate their growth and learn the skills to become the change-makers of tomorrow.</div>
+                                <button onclick=" window.open('https://www.beta.camp/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check them out!</button>
                             </div>
                         </div><br>
                         
@@ -213,7 +301,7 @@
                             <div class="overlay">
                                 <div class="text2">FDS (Alumni)</div>
                                 <div class="text3">Future Design School (FDS) empowers students with the skills they need to be ready for the future, while helping hundreds of students in dozens of cities to learn skills in app design.</div>
-                                <button onclick=" window.open('https://futuredesignschool.com/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
+                                <button onclick=" window.open('https://futuredesignschool.com/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check them out!</button>
                             </div>
                         </div><br>
 
@@ -223,7 +311,7 @@
                             <div class="overlay">
                                 <div class="text2">UCC (Old Boy)</div>
                                 <div class="text3">Upper Canada College (UCC) is an IB World School that enrolls 1,160 boys in Senior Kindergarten through Year 12, and has 10,000 alumni in more than 75 countries.</div>
-                                <button onclick=" window.open('http://ucc.on.ca/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check out their website!</button>
+                                <button onclick=" window.open('http://ucc.on.ca/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check them out!</button>
                             </div>
                         </div><br>
                     </center><br><br><br><br><br>
@@ -273,7 +361,7 @@
                             <img src="Images/software.png" class="boximg">
                             <p class="boxtitle">SOFTWARE</p>
                             <p class="boxpar"> 
-                                I have also developed numerous software projects, mostly in the form of websites and games. I always love creating something and getting it to do something cool! 
+                                I have also developed numerous software projects, mostly in the form of websites and games. I love creating new things and getting them to do something cool! 
                             </p><br> 
                         </div> 
 
@@ -327,7 +415,7 @@
                     <h1 class="light-mode">Here's my portfolio.</h1>
 
                     <!-- Resume Button -->        
-                    <button onclick=" window.open('resume.jpg','_blank')" class="downloadbtn"><i class="fa fa-download"></i> &nbsp Download my resume</button><br><br><br><br><br>
+                    <button onclick=" window.open('Images/resume.pdf','_blank')" class="downloadbtn"><i class="fa fa-download"></i> &nbsp Download my resume</button><br><br><br><br><br>
                 </div>
             </section>
         
@@ -342,7 +430,7 @@
                 <!-- Contact Buttons -->
                 <a class="tooltip" href="https://www.linkedin.com/in/odosa-obasuyi-a2b62b150/" target="_blank"><img src="Images/linkedin2.png" class="copybtn" hspace="5;"><span class="tooltiptext">Odosa Obasuyi</span></a>
                 <a class="tooltip" href="https://github.com/od-obas1187" target="_blank"><img src="Images/github.png" class="copybtn" hspace="5;"><span class="tooltiptext">od-obas1187</span></a>
-                <a class="tooltip"><img src="Images/email.jpg" class="copybtn" hspace="5;"><span class="tooltiptext">odosaobasuyi @gmail.com</span></a>
+                <a class="tooltip" href="mailto:odosaobasuyi@gmail.com"><img src="Images/email.jpg" class="copybtn" hspace="5;"><span class="tooltiptext">odosaobasuyi @gmail.com</span></a>
                 <a class="tooltip"><img src="Images/phone.png" class="copybtn" hspace="5;"><span class="tooltiptext">Available upon request</span></a>
 
                 <!-- Copyright Statement -->
@@ -352,34 +440,135 @@
                 </center>
 
             </div>
+
+
+
+            <!-- Modal 1: Autism 101 Info Split -->
+            <div id="modal1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-image: linear-gradient(to right, #b8ffc0, #6ad978);">
+                    <span class="close">&times;</span>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px; font-weight: bold;">More about Memofood</h2>
+                    </div>
+                    <div class="modal-body"><br>
+                        <p class="boxpar"> 
+                            I am the co-founder of a company started in <span style="font-weight: 600;">SHAD</span> called Memofood, working on
+                            what I believe is a solution to food waste in Canada.
+                        </p>
+                        <p class="boxpar"> 
+                            Right now, Memofood is going under a renovation! Currently the app and website are being built, more details coming
+                            soon!
+                        </p><br>
+                        <!-- <button onclick=" window.open('https://memofood.ca','_blank')" class="hometomapbtndark" style="float: none;">Check us out!</button> -->
+                    </div><br>
+                </div>
+
+            </div>
+
+            <!-- Modal 2: Diag 101 Info Split -->
+            <div id="modal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-image: linear-gradient(to right, #d85d5d, #e38484);">
+                    <span class="close">&times;</span>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px; font-weight: bold;">More about Local Bundles</h2>
+                    </div>
+                    <div class="modal-body"><br>
+                        <p class="boxpar"> 
+                            I was the co-founder of a company started in <span style="font-weight: 600;">BETA Camp</span> called Local 
+                            Bundles, where we attempted to aid local restaurants affected by the pandemic.
+                        </p>
+                        <p class="boxpar"> 
+                            Our solution was creating online gift card bundles for these local restaurants, and we were actually able to 
+                            get three restaurants in Oakville on board!
+                        </p><br>
+                        <button onclick=" window.open('https://localbundles.square.site/','_blank')" class="modalbtn" style="float: none; background-color: #830c0c;">Check us out!</button>
+                    </div><br>
+                </div>
+
+            </div>
+            
+            <!-- Modal 3: Serv 101 Info Split -->
+            <div id="modal3" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-image: linear-gradient(to right, #f3d6bc, #d78b49);">
+                    <span class="close">&times;</span>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px; font-weight: bold;">More about Doughboy</h2>
+                    </div>
+                    <div class="modal-body"><br>
+                        <p class="boxpar"> 
+                            I am currently building a 2D platformer game called Doughboy - a passion project I've been working on for months - both to put my coding and Photoshop skills to the test and as a modernized tribute to my favorite retro games of the past.
+                        </p>
+                        <p class="boxpar"> 
+                            The demo of the first level is available upon request, so email <span style="font-weight: 600;">dbdemoofficial@gmail.com</span> to try it!
+                        </p><br>
+                        <button onclick=" window.open('mailto:officialdbdemo@gmail.com','_blank')" class="modalbtn" style="float: none; background-color: #d78b49;">Check it out!</button>
+                    </div><br>
+                </div>
+
+            </div>
+            
+            <!-- Modal 4: YT Split -->
+            <div id="modal4" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-image: linear-gradient(to right, #b1a3ff, #2600ff);">
+                    <span class="close">&times;</span>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px; font-weight: bold;">More about My Capstone Project</h2>
+                    </div>
+                    <div class="modal-body"><br>
+                        <p class="boxpar"> 
+                           As part of my IBM Data Science Professional Certificate, I created a machine learning pipeline to predict the
+                           outcome of one of SpaceX's rocket launches.
+                        </p>
+                        <p class="boxpar"> 
+                            It was a great challenge, requiring everything I had learned so far and more. But after completion, I was able to 
+                            truly build on my Machine Learning (using Scikit Learn), Python, SQL, R, IBM Cloud, Git, Jupyter Notebook, Web Scraping, 
+                            Data Analysis, and Data Visualization skills, among others. You can see what I built below!
+                        </p><br>
+                        <button onclick=" window.open('https://github.com/od-obas1187/IBMFinalProject','_blank')" class="modalbtn" style="float: none; background-color: #2600ff;">Check it out!</button>
+                    </div><br>
+                </div>
+
+            </div>
+            
+            <!-- Modal 5: Blog Split -->
+            <div id="modal5" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-image: linear-gradient(to right,#2998ff , #ff4bfd)">
+                    <span class="close">&times;</span>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px; font-weight: bold;">More about My Newest Project</h2>
+                    </div>
+                    <div class="modal-body"><br>
+                        <p class="boxpar"> 
+                           While I can't say anything right now, I can definitely say that this will be my biggest project to date,
+                           and by quite a distance!
+                        </p>
+                        <p class="boxpar"> 
+                            It's a combination of everything: requiring my entrepreneurship, website development, and data science & 
+                            machine learning skills, among so many more I had to touch on and develop. I'm extremely excited to properly
+                            share this in the near future, so stay tuned! 
+                        </p><br>
+                    </div><br>
+                </div>
+
+            </div>
             
         </div>
         
 
         
         <!-- Javascript -->
+        <script src="script.js"></script>
         <script type="text/javascript">
-
-            
-            
-        /***** LOADING SCREEN *****/
-        var myVar;
-            
-        function stuff() {
-          myVar = setTimeout(showPage, 3000);
-        }
-        
-        function loadingScreen() {
-            stuff();
-        }
-
-        function showPage() {
-          document.getElementsByClassName("gooey")[0].style.display = "none";
-          document.getElementsByClassName("dot")[0].style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
-        }
-            
-            
             
         /***** TYPEWRITER *****/
         //Variables
@@ -428,22 +617,6 @@
         // Start the typing effect on load
         intervalnum = setInterval(Type, 60);
             
-        
-        
-        /***** CHANGE IMAGE *****/
-        var n = 0;
-
-        function changeImage() {
-          if ( n == 0 ) {
-            document.getElementsByClassName('dlimg')[0].src = "Images/sun.png";
-            n = 1;
-          }
-          else if ( n == 1 ) {
-            document.getElementsByClassName('dlimg')[0].src = "Images/moon.png";
-            n = 0;
-          }
-        }
-            
             
             
         /***** DARK/LIGHT TOGGLE *****/
@@ -467,13 +640,8 @@
             changeImage();
         }
            
-            
-            
-        /***** TRANSITIONING TOPNAV COLOR *****/
-        window.onscroll = function() {scrollFunction()};  
-           
-            
-            
+
+        
         /***** SCROLL-TO-TOP BUTTON *****/
         function scrollFunction() {
           if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -500,11 +668,87 @@
           }
         }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
+        /***** MODAL STUFF *****/
+// Get the modal
+//var modals = [document.getElementById("modal1"), document.getElementById("modal2"), document.getElementById("modal3"), document.getElementById("modal4"), document.getElementById("modal5")];
+var modal1 = document.getElementById("modal1");
+var modal2 = document.getElementById("modal2");
+var modal3 = document.getElementById("modal3");
+var modal4 = document.getElementById("modal4");
+var modal5 = document.getElementById("modal5");
+    
+// Get the button that opens the modal
+//var modalbtns = [document.getElementById("modalbtn1"), document.getElementById("modalbtn2"), document.getElementById("modalbtn3"), document.getElementById("modalbtn4"), document.getElementById("modalbtn5")];
+var modalbtn1 = document.getElementById("modalbtn1");
+var modalbtn2 = document.getElementById("modalbtn2");
+var modalbtn3 = document.getElementById("modalbtn3");
+var modalbtn4 = document.getElementById("modalbtn4");
+var modalbtn5 = document.getElementById("modalbtn5");
+
+// Get the <span> element that closes the modal
+//var spans = [document.getElementsByClassName("close")[0], document.getElementsByClassName("close")[1], document.getElementsByClassName("close")[2], document.getElementsByClassName("close")[3], document.getElementsByClassName("close")[4]];
+var span1 = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
+var span3 = document.getElementsByClassName("close")[2];
+var span4 = document.getElementsByClassName("close")[3];
+var span5 = document.getElementsByClassName("close")[4];
+
+
+/*var j=0;
+for (j=0; j<modals.length; j++){
+    modalbtns[j].onclick = function() {
+      modals[j].style.display = "block";
+    }
+    
+    spans[j].onclick = function() {
+      modals[j].style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modals[j]) {
+        modals[j].style.display = "none";
+      }
+    }
+}*/
+    
+// When the user clicks the button, open the modal 
+/*btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}*/
+    
+// When the user clicks the button, open the modal
+modalbtn1.onclick = function() {modal1.style.display = "block";}
+modalbtn2.onclick = function() {modal2.style.display = "block";}
+modalbtn3.onclick = function() {modal3.style.display = "block";}
+modalbtn4.onclick = function() {modal4.style.display = "block";}
+modalbtn5.onclick = function() {modal5.style.display = "block";}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {modal1.style.display = "none";}
+span2.onclick = function() {modal2.style.display = "none";}
+span3.onclick = function() {modal3.style.display = "none";}
+span4.onclick = function() {modal4.style.display = "none";}
+span5.onclick = function() {modal5.style.display = "none";}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {if (event.target == modal1) {modal1.style.display = "none";}}
+window.onclick = function(event) {if (event.target == modal2) {modal2.style.display = "none";}}
+window.onclick = function(event) {if (event.target == modal3) {modal3.style.display = "none";}}
+window.onclick = function(event) {if (event.target == modal4) {modal4.style.display = "none";}}
+window.onclick = function(event) {if (event.target == modal5) {modal5.style.display = "none";}}
+
 
         </script>
         
