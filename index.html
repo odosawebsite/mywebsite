@@ -97,19 +97,29 @@
 
                     <!-- Stuff about me -->
                     <p class="aboutpar"><span style="font-weight: 300;"> I'm <span style="font-weight: 700;">Odosa Obasuyi</span>, a 
-                        sophomore at the University of Toronto, St. George, currently studying Computer Science, Computational Cognitive 
-                        Science, and Math. I have a passion for software development and am interested in exponential technology 
-                        (specifically virtual and augmented reality &amp; IoT (Internet of things)), entrepreneurship, and programming. 
+                        junior (3rd year) at the University of Toronto, St. George, currently studying Computer Science, Computational Cognitive 
+                        Science, and Math. I have a passion for software development, entrepreneurship, and exponential technology, 
+                        especially AI & ML right now!
                         I've created and been part of many projects focused on solving real-world problems at hackathons, tech and 
                         innovation-focused programs, and as personal side projects.</span>
                     </p>
 
                     <p class="aboutpar" style="font-weight: 300;">
-                        Right now, I'd say front end web development (using HTML, CSS, JavaScript), 2D game development (using Java & Photoshop), 
-                        data analysis + visualization + web scraping (using IBM Cloud, Python, R, SQL, Jupyter Notebook), machine learning 
-                        (using Python's Scikit learn library), OS pgoramming (using C, Git, Shell), and project management/business orientation 
-                        (Git, other projects shown below) are things I'm skilled at. Always trying to add more; app development and React 
-                        are next up!
+                        I’m also currently the <span style="font-weight: 700;">founder & CEO of Autinerary</span>, a non-profit organization focused on 
+                        providing a central hub 
+                        for anything autism-related! I developed the first version of the website 
+                        (autinerary.ca), with helpful starting info & a Google Maps API system connecting users to the services. And now, I’m currently 
+                        leading a team of 10, with our biggest success being
+                        winning $4000 in funding from the Black Founders Network!
+                    </p>
+
+                    <p class="aboutpar" style="font-weight: 300;">
+                        Right now, I'd say using DevOps tools & REST APIs (JIRA, Confluence, GitHub, Artifactory, Jenkins, Docker), 
+                        software engineering techniques (using Java), front end web development (using HTML, CSS, JavaScript), 2D game
+                        development (using Java & Photoshop), data analysis + visualization + web scraping (using IBM Cloud, Python, R, 
+                        SQL, Jupyter Notebook), machine learning (using Python's Scikit learn library), OS pgoramming (using C, Git, 
+                        Shell), and project management/business orientation (Git, other projects shown below) are things I'm skilled at. 
+                        Always trying to add more; app development and React are next up!
                     </p>
 
                     <p class="aboutpar2">I'm driven to create a company that impacts billions of lives worldwide, 
@@ -129,7 +139,9 @@
                     <div class="container">
                         <div class="wgh-slider">
                           <input class="wgh-slider-target" type="radio" id="slide-autinerary" name="slider" checked="checked"/>
+                          <input class="wgh-slider-target" type="radio" id="slide-cibc" name="slider"/>
                           <input class="wgh-slider-target" type="radio" id="slide-vector" name="slider"/>
+                          <input class="wgh-slider-target" type="radio" id="slide-wyb" name="slider"/>
                           <input class="wgh-slider-target" type="radio" id="slide-ibm" name="slider"/>
                           <input class="wgh-slider-target" type="radio" id="slide-schedulize" name="slider"/>
                           <input class="wgh-slider-target" type="radio" id="slide-doughboy" name="slider"/>
@@ -146,12 +158,28 @@
                                       <label class="wgh-slider-item__trigger" for="slide-autinerary" title="Show product"></label>
                                     </div>
                                 </div>
+                                <div class="wgh-slider-item" id="modalbtncibc">
+                                    <div class="wgh-slider-item__inner">
+                                      <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="Images/cibcslide.jpg" alt="Gears"/>
+                                        <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">CIBC</a><span>Automation using REST APIs</span></figcaption>
+                                      </figure>
+                                      <label class="wgh-slider-item__trigger" for="slide-cibc" title="Show product"></label>
+                                    </div>
+                                </div>
                                 <div class="wgh-slider-item" id="modalbtnvector">
                                     <div class="wgh-slider-item__inner">
                                       <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="Images/vectorcaptsone.jpg" alt="Doctor Stuff"/>
                                         <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">Predicting Autism in Adults using ML</a><span>My VectorAI Capstone Project</span></figcaption>
                                       </figure>
                                       <label class="wgh-slider-item__trigger" for="slide-vector" title="Show product"></label>
+                                    </div>
+                                </div>
+                                <div class="wgh-slider-item" id="modalbtnwyb">
+                                    <div class="wgh-slider-item__inner">
+                                      <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="Images/wybslide.png" alt="Email"/>
+                                        <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">Autinerary</a><span>A Backend Email System</span></figcaption>
+                                      </figure>
+                                      <label class="wgh-slider-item__trigger" for="slide-wyb" title="Show product"></label>
                                     </div>
                                 </div>
                                 <div class="wgh-slider-item" id="modalbtnibm">
@@ -251,7 +279,7 @@
                         <div class="expcontainer">
                             <img src="Images/uoft.jpg" class="image">
                             <div class="overlay">
-                                <div class="text2">UofT (Sophomore)</div>
+                                <div class="text2">UofT (Junior)</div>
                                 <div class="text3">University of Toronto (UofT) is a globally top-ranked public research university located in Toronto, Ontario, Canada. Their Computer Science program is currently the top-ranked in Canada, and one of the highest ranked in the world.</div>
                                 <button onclick=" window.open('https://www.utoronto.ca/','_blank')" class="expbtn"><i class="fa fa-external-link"></i> &nbsp Check them out!</button>
                             </div>
@@ -535,6 +563,25 @@
 
             </div>
 
+            <!-- Modal: CIBC -->
+            <div id="modalcibc" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-image: linear-gradient(to right,#ffffff , #ff2929)">
+                    <span class="close">&times;</span>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px; font-weight: bold;">More about My Work at CIBC</h2>
+                    </div>
+                    <div class="modal-body"><br>
+                        <p class="boxpar"> 
+                            As part of my internship at CIBC, I used the Artifactory Rest API & JIRA Scriptrunner to automate an
+                            Artifactory-related process from a difficult process to 1 easy click.
+                        </p>
+                    </div><br>
+                </div>
+
+            </div>
+
             <!-- Modal: VectorAI -->
             <div id="modalvector" class="modal">
 
@@ -552,6 +599,26 @@
                         <button onclick=" 
                         window.open('https://colab.research.google.com/drive/1MiL-cgeo5SanHWQCLtwOx4ImaZqGFsIL?usp=sharing','_blank')" 
                         class="modalbtn" style="float: none; background-color: #000000;">Check it out!</button>
+                    </div><br>
+                </div>
+
+            </div>
+
+            <!-- Modal: WYB -->
+            <div id="modalwyb" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-image: linear-gradient(to right,#13007e , #000000)">
+                    <span class="close">&times;</span>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px; font-weight: bold;">More about My Work at WYB</h2>
+                    </div>
+                    <div class="modal-body"><br>
+                        <p class="boxpar"> 
+                            As part of my internship at WooYourBoo, I used Java, Firebase's database, and the Clean Architecture 
+                            Software Engineering principles to create a backend email-sending system for monthly updates on scores
+                            in the app.
+                        </p>
                     </div><br>
                 </div>
 
@@ -778,34 +845,55 @@
 
         /***** MODAL STUFF *****/
         // Get the modal
-        //var modals = [document.getElementById("modal1"), document.getElementById("modal2"), document.getElementById("modal3"), document.getElementById("modal4"), document.getElementById("modal5")];
-        var modalautinerary = document.getElementById("modalautinerary");
-        var modalvector = document.getElementById("modalvector");
-        var modalibm = document.getElementById("modalibm");
-        var modalschedulize = document.getElementById("modalschedulize");
-        var modaldoughboy = document.getElementById("modaldoughboy");
-        var modalbundles = document.getElementById("modalbundles");
-        var modalmemofood = document.getElementById("modalmemofood");
+        var modals = [document.getElementById("modalautinerary"), document.getElementById("modalcibc"), 
+        document.getElementById("modalvector"), document.getElementById("modalwyb"), document.getElementById("modalibm"),
+        document.getElementById("modalschedulize"), document.getElementById("modaldoughboy"), document.getElementById("modalbundles"),
+        document.getElementById("modalmemofood")];
+        // for (var i=0; i<modals.length; i++) {
+        //     modals[i].style.display = "none";
+        //     console.log(modals[i].style);
+            
+        // }
+        // var modalautinerary = document.getElementById("modalautinerary");
+        // var modalcibc = document.getElementById("modalcibc");
+        // var modalvector = document.getElementById("modalvector");
+        // var modalwyb = document.getElementById("modalwyb");
+        // var modalibm = document.getElementById("modalibm");
+        // var modalschedulize = document.getElementById("modalschedulize");
+        // var modaldoughboy = document.getElementById("modaldoughboy");
+        // var modalbundles = document.getElementById("modalbundles");
+        // var modalmemofood = document.getElementById("modalmemofood");
             
         // Get the button that opens the modal
-        //var modalbtns = [document.getElementById("modalbtn1"), document.getElementById("modalbtn2"), document.getElementById("modalbtn3"), document.getElementById("modalbtn4"), document.getElementById("modalbtn5")];
-        var modalbtnautinerary = document.getElementById("modalbtnautinerary");
-        var modalbtnvector = document.getElementById("modalbtnvector");
-        var modalbtnibm = document.getElementById("modalbtnibm");
-        var modalbtnschedulize = document.getElementById("modalbtnschedulize");
-        var modalbtndoughboy = document.getElementById("modalbtndoughboy");
-        var modalbtnbundles = document.getElementById("modalbtnbundles");
-        var modalbtnmemofood = document.getElementById("modalbtnmemofood");
+        var modalbtns = [document.getElementById("modalbtnautinerary"), document.getElementById("modalbtncibc"), 
+        document.getElementById("modalbtnvector"), document.getElementById("modalbtnwyb"), document.getElementById("modalbtnibm"),
+        document.getElementById("modalbtnschedulize"), document.getElementById("modalbtndoughboy"), document.getElementById("modalbtnbundles"),
+        document.getElementById("modalbtnmemofood")];
+        // var modalbtnautinerary = document.getElementById("modalbtnautinerary");
+        // var modalbtncibc = document.getElementById("modalbtncibc");
+        // var modalbtnvector = document.getElementById("modalbtnvector");
+        // var modalbtnwyb = document.getElementById("modalbtnwyb");
+        // var modalbtnibm = document.getElementById("modalbtnibm");
+        // var modalbtnschedulize = document.getElementById("modalbtnschedulize");
+        // var modalbtndoughboy = document.getElementById("modalbtndoughboy");
+        // var modalbtnbundles = document.getElementById("modalbtnbundles");
+        // var modalbtnmemofood = document.getElementById("modalbtnmemofood");
 
         // Get the <span> element that closes the modal
-        //var spans = [document.getElementsByClassName("close")[0], document.getElementsByClassName("close")[1], document.getElementsByClassName("close")[2], document.getElementsByClassName("close")[3], document.getElementsByClassName("close")[4]];
-        var span1 = document.getElementsByClassName("close")[0];
-        var span2 = document.getElementsByClassName("close")[1];
-        var span3 = document.getElementsByClassName("close")[2];
-        var span4 = document.getElementsByClassName("close")[3];
-        var span5 = document.getElementsByClassName("close")[4];
-        var span6 = document.getElementsByClassName("close")[5];
-        var span7 = document.getElementsByClassName("close")[6];
+        var spans = [document.getElementsByClassName("close")[0], document.getElementsByClassName("close")[1], 
+        document.getElementsByClassName("close")[2], document.getElementsByClassName("close")[3], 
+        document.getElementsByClassName("close")[4], document.getElementsByClassName("close")[5],
+        document.getElementsByClassName("close")[6], document.getElementsByClassName("close")[7],
+        document.getElementsByClassName("close")[8]];
+        // var span1 = document.getElementsByClassName("close")[0];
+        // var span2 = document.getElementsByClassName("close")[1];
+        // var span3 = document.getElementsByClassName("close")[2];
+        // var span4 = document.getElementsByClassName("close")[3];
+        // var span5 = document.getElementsByClassName("close")[4];
+        // var span6 = document.getElementsByClassName("close")[5];
+        // var span7 = document.getElementsByClassName("close")[6];
+        // var span8 = document.getElementsByClassName("close")[7];
+        // var span9 = document.getElementsByClassName("close")[8];
 
 
         /*var j=0;
@@ -843,31 +931,59 @@
         }*/
             
         // When the user clicks the button, open the modal
-        modalbtnautinerary.onclick = function() {modalautinerary.style.display = "block";}
-        modalbtnvector.onclick = function() {modalvector.style.display = "block";}
-        modalbtnibm.onclick = function() {modalibm.style.display = "block";}
-        modalbtnschedulize.onclick = function() {modalschedulize.style.display = "block";}
-        modalbtndoughboy.onclick = function() {modaldoughboy.style.display = "block";}
-        modalbtnbundles.onclick = function() {modalbundles.style.display = "block";}
-        modalbtnmemofood.onclick = function() {modalmemofood.style.display = "block";}
+        for (var i=0; i < modals.length; i++) {
+            //console.log(modals[i].style);
+            //console.log(modalbtns[i]);
+            modalbtns[i].onclick = function(i) {
+                return function() {modals[i].style.display = "block";}
+            }(i);
+        }
+        // for (var i=0; i<modals.length; i++) {
+        //     modals[i].style.display = "none";
+        //     console.log(modals[i].style);
+            
+        // }
+        // modalbtnautinerary.onclick = function() {modalautinerary.style.display = "block";}
+        // modalbtncibc.onclick = function() {modalcibc.style.display = "block";}
+        // modalbtnvector.onclick = function() {modalvector.style.display = "block";}
+        // modalbtnwyb.onclick = function() {modalwyb.style.display = "block";}
+        // modalbtnibm.onclick = function() {modalibm.style.display = "block";}
+        // modalbtnschedulize.onclick = function() {modalschedulize.style.display = "block";}
+        // modalbtndoughboy.onclick = function() {modaldoughboy.style.display = "block";}
+        // modalbtnbundles.onclick = function() {modalbundles.style.display = "block";}
+        // modalbtnmemofood.onclick = function() {modalmemofood.style.display = "block";}
 
         // When the user clicks on <span> (x), close the modal
-        span1.onclick = function() {modalautinerary.style.display = "none";}
-        span2.onclick = function() {modalvector.style.display = "none";}
-        span3.onclick = function() {modalibm.style.display = "none";}
-        span4.onclick = function() {modalschedulize.style.display = "none";}
-        span5.onclick = function() {modaldoughboy.style.display = "none";}
-        span6.onclick = function() {modalbundles.style.display = "none";}
-        span7.onclick = function() {modalmemofood.style.display = "none";}
+        for (var j=0; j < modalbtns.length; j++) {
+            spans[j].onclick = function(j) {
+                return function() {modals[j].style.display = "none";}
+            }(j);
+        }
+        // span1.onclick = function() {modalautinerary.style.display = "none";}
+        // span2.onclick = function() {modalcibc.style.display = "none";}
+        // span3.onclick = function() {modalvector.style.display = "none";}
+        // span4.onclick = function() {modalwyb.style.display = "none";}
+        // span5.onclick = function() {modalibm.style.display = "none";}
+        // span6.onclick = function() {modalschedulize.style.display = "none";}
+        // span7.onclick = function() {modaldoughboy.style.display = "none";}
+        // span8.onclick = function() {modalbundles.style.display = "none";}
+        // span9.onclick = function() {modalmemofood.style.display = "none";}
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {if (event.target == modalautinerary) {modalautinerary.style.display = "none";}}
-        window.onclick = function(event) {if (event.target == modalvector) {modalvector.style.display = "none";}}
-        window.onclick = function(event) {if (event.target == modalibm) {modalibm.style.display = "none";}}
-        window.onclick = function(event) {if (event.target == modalschedulize) {modalschedulize.style.display = "none";}}
-        window.onclick = function(event) {if (event.target == modaldoughboy) {modaldoughboy.style.display = "none";}}
-        window.onclick = function(event) {if (event.target == modalbundles) {modalbundles.style.display = "none";}}
-        window.onclick = function(event) {if (event.target == modalmemofood) {modalmemofood.style.display = "none";}}
+        for (var k=0; k < modalbtns.length; k++) {
+            window.onclick = function(k) {
+                return function(event) {if (event.target == modals[k]) {modals[k].style.display = "none";}}
+            }(k);
+        }
+        // window.onclick = function(event) {if (event.target == modalautinerary) {modalautinerary.style.display = "none";}}
+        // window.onclick = function(event) {if (event.target == modalcibc) {modalcibc.style.display = "none";}}
+        // window.onclick = function(event) {if (event.target == modalvector) {modalvector.style.display = "none";}}
+        // window.onclick = function(event) {if (event.target == modalwyb) {modalwyb.style.display = "none";}}
+        // window.onclick = function(event) {if (event.target == modalibm) {modalibm.style.display = "none";}}
+        // window.onclick = function(event) {if (event.target == modalschedulize) {modalschedulize.style.display = "none";}}
+        // window.onclick = function(event) {if (event.target == modaldoughboy) {modaldoughboy.style.display = "none";}}
+        // window.onclick = function(event) {if (event.target == modalbundles) {modalbundles.style.display = "none";}}
+        // window.onclick = function(event) {if (event.target == modalmemofood) {modalmemofood.style.display = "none";}}
 
 
         </script>
